@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="scu.miomin.com.notenal.CrimeListActivity">
+    <item
+        android:id="@+id/action_nestedScrollview"
+        android:orderInCategory="100"
+        android:title="NestedScrollview"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_send_message"
+        android:orderInCategory="100"
+        android:title="Send Message"
+        app:showAsAction="never" />
+</menu>
