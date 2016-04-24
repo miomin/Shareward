@@ -6,13 +6,13 @@ import android.widget.Button;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.constants.APPAction;
 import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.core.BaseActivity;
+import scu.miomin.com.shareward.base.ToolbarActivity;
 
 
 /**
  * Created by Miomin and Stay on 2/2/16.
  */
-public class HomeActivity extends BaseActivity {
+public class HomeActivity extends ToolbarActivity {
 
     private Button mHomeProfileBtn;
 

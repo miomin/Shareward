@@ -5,15 +5,15 @@ import android.view.View;
 import android.widget.Button;
 
 import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.base.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.core.BaseActivity;
 import scu.miomin.com.shareward.home.HomeActivity;
 
 
 /**
  * Created by Miomin and Stay on 2/2/16.
  */
-public class LoginActivity extends BaseActivity implements View.OnClickListener {
+public class LoginActivity extends ToolbarActivity implements View.OnClickListener {
 
     private Button mLoginSubmitBtn;
 
@@ -26,7 +26,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-//        AppStatusTracker.getInstance().setAppStatus(APPAction.STATUS_ONLINE);
         startActivity(new Intent(this, HomeActivity.class));
     }
 }

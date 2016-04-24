@@ -6,15 +6,15 @@ import android.os.Handler;
 import android.os.Message;
 
 import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.base.NoneToolbarActivity;
 import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.core.AppStatusTracker;
-import scu.miomin.com.shareward.core.BaseActivity;
 import scu.miomin.com.shareward.sample.LoginActivity;
 
 /**
  * Created by Miomin and Stay on 2/2/16.
  */
-public class WelcomeActivity extends BaseActivity {
+public class WelcomeActivity extends NoneToolbarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
