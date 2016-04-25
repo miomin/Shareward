@@ -3,6 +3,7 @@ package scu.miomin.com.shareward.core;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import scu.miomin.com.shareward.constants.APPAction;
 import scu.miomin.com.shareward.constants.APPStatu;
@@ -17,6 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i("miomin", getClass().getSimpleName());
         // 添加一个Activity实例到AppStatusTracker
         AppStatusTracker.getInstance(getApplication()).addActivity(this);
         switch (AppStatusTracker.getInstance(getApplication()).getAppStatus()) {
@@ -26,10 +28,13 @@ public abstract class BaseActivity extends AppCompatActivity {
                 break;
             // 如果APP正常启动
             case APPStatu.STATUS_ONLINE:
-                setUpData();
+                setUpView();
+                setUpData(savedInstanceState);
                 break;
         }
     }
+
+    protected abstract void setUpView();
 
     @Override
     protected void onDestroy() {
@@ -41,7 +46,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     /**
      * 正常启动
      */
-    protected abstract void setUpData();
+    protected abstract void setUpData(Bundle savedInstanceState);
 
     /**
      * 如果App被kill掉了，应该回到welcomeActivity（singtask），重新进入APP正常的启动流程

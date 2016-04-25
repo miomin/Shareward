@@ -20,6 +20,8 @@ public abstract class ToolbarActivity extends BaseActivity {
     private TextView toolbar_title;
     protected ActionBar actionBar;
 
+
+
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);
@@ -29,7 +31,7 @@ public abstract class ToolbarActivity extends BaseActivity {
     /**
      * 根据Activity类型确定Toolbar需要做哪些初始化
      */
-    public void setContentView(@LayoutRes int layoutResID, int mode) {
+    protected void setContentView(@LayoutRes int layoutResID, int mode) {
         super.setContentView(layoutResID);
         setToolbar(mode);
     }

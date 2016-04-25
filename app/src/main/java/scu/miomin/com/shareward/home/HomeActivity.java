@@ -1,6 +1,7 @@
 package scu.miomin.com.shareward.home;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.Button;
 
 import scu.miomin.com.shareward.R;
@@ -20,9 +21,13 @@ public class HomeActivity extends ToolbarActivity {
      * 代替onCreate
      */
     @Override
-    protected void setUpData() {
-        setContentView(R.layout.activity_home, ActivityType.MODE_TOOLBAR_BACK);
+    protected void setUpData(Bundle savedInstanceState) {
         mHomeProfileBtn = (Button) findViewById(R.id.mHomeProfileBtn);
+    }
+
+    @Override
+    protected void setUpView() {
+        setContentView(R.layout.activity_home, ActivityType.MODE_TOOLBAR_BACK);
     }
 
     @Override
