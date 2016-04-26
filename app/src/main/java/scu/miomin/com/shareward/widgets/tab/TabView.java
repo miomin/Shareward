@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.core.BaseFragment;
 
 /**
  * Created by miomin on 16/4/25.
@@ -57,16 +58,12 @@ public class TabView extends LinearLayout implements View.OnClickListener {
         public int imgResId;
         public int labelResId;
         public int badgeCount;
+        public Class<? extends BaseFragment> targetFragmentClz;
 
-        public Tab(int imgResId, int labelResId) {
+        public Tab(int imgResId, int labelResId, Class<? extends BaseFragment> targetFragmentClz) {
             this.imgResId = imgResId;
             this.labelResId = labelResId;
-        }
-
-        public Tab(int badgeCount, int imgResId, int labelResId) {
-            this.badgeCount = badgeCount;
-            this.imgResId = imgResId;
-            this.labelResId = labelResId;
+            this.targetFragmentClz = targetFragmentClz;
         }
     }
 }

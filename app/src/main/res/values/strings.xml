@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Shoreward</string>
+    <string name="app_name">Shareward</string>
     <string name="title_activity_sample_tab">SampleTabActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>

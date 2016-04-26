@@ -46,4 +46,11 @@
         <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
+    <style name="MaterialPrimaryButtonStyle">
+        <item name="android:background">@drawable/bg_material_btn_primary_ripple</item>
+        <item name="android:textColor">@drawable/text_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>

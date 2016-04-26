@@ -8,7 +8,6 @@ import android.widget.Button;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.home.SampleTabActivity;
 
 
 /**
