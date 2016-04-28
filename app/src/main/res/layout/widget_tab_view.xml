@@ -13,9 +13,9 @@
         android:id="@+id/mTabLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="6dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
-        android:textColor="@color/blackLight"
+        android:textColor="@drawable/text_color_tab"
         android:textSize="11sp" />
 </merge>

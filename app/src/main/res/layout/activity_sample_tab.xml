@@ -7,7 +7,7 @@
         layout="@layout/widget_toolbar"
         android:theme="@style/AppTheme.AppBarOverlay" />
 
-    <scu.miomin.com.shareward.widgets.tab.TabLayout
+    <scu.miomin.com.shareward.widgets.tab.ShareTabLayout
         android:id="@+id/mTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

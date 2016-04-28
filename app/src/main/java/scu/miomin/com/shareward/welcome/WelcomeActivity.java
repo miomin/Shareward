@@ -25,12 +25,11 @@ public class WelcomeActivity extends NoneToolbarActivity {
 
     @Override
     protected void setUpView() {
-
+        setContentView(R.layout.activity_welcome);
     }
 
     @Override
     protected void setUpData(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_welcome);
         handler.sendEmptyMessageDelayed(0, 1000);
     }
 

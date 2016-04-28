@@ -19,12 +19,12 @@ public class LoginActivity extends ToolbarActivity implements View.OnClickListen
 
     @Override
     protected void setUpView() {
-
+        setContentView(R.layout.activity_login, ActivityType.MODE_TOOLBAR);
     }
 
     @Override
     protected void setUpData(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_login, ActivityType.MODE_TOOLBAR);
+        setUpTitle("登录");
         mLoginSubmitBtn = (Button) findViewById(R.id.mLoginSubmitBtn);
         mLoginSubmitBtn.setOnClickListener(this);
     }

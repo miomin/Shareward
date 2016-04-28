@@ -5,6 +5,7 @@ import android.support.annotation.LayoutRes;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.TextView;
 
 import scu.miomin.com.shareward.R;
@@ -19,7 +20,6 @@ public abstract class ToolbarActivity extends BaseActivity {
     protected Toolbar toolbar;
     private TextView toolbar_title;
     protected ActionBar actionBar;
-
 
 
     @Override
@@ -67,7 +67,7 @@ public abstract class ToolbarActivity extends BaseActivity {
     /**
      * 设置Toolbar标题
      */
-    public void setTitle(String title, int gravity, int titleSize, int titleColor) {
+    public void setUpTitle(String title, int gravity, int titleSize, int titleColor) {
 
         if (toolbar == null || toolbar_title == null) {
             return;
@@ -82,12 +82,14 @@ public abstract class ToolbarActivity extends BaseActivity {
     /**
      * 设置Toolbar标题
      */
-    public void setTitle(String title) {
+    public void setUpTitle(String title) {
 
         if (toolbar == null || toolbar_title == null) {
+            Log.i("miomin", "notitle");
             return;
         }
 
+        Log.i("miomin", "settitle");
         toolbar_title.setText(title);
     }
 

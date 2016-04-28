@@ -3,7 +3,6 @@ package scu.miomin.com.shareward.widgets.tab;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,23 +13,23 @@ import scu.miomin.com.shareward.core.BaseFragment;
 /**
  * Created by miomin on 16/4/25.
  */
-public class TabView extends LinearLayout implements View.OnClickListener {
+public class ShareTabView extends LinearLayout {
 
     private ImageView mTabImg;
     private TextView mTabLabel;
 
-    public TabView(Context context) {
+    public ShareTabView(Context context) {
         super(context);
         setView(context);
     }
 
-    public TabView(Context context, AttributeSet attrs) {
+    public ShareTabView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setView(context);
 
     }
 
-    public TabView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ShareTabView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setView(context);
     }
@@ -40,18 +39,11 @@ public class TabView extends LinearLayout implements View.OnClickListener {
         setOrientation(VERTICAL);
         mTabImg = (ImageView) findViewById(R.id.mTabImg);
         mTabLabel = (TextView) findViewById(R.id.mTabLabel);
-
-        setOnClickListener(this);
     }
 
     public void setUpData(Tab tab) {
         mTabImg.setBackgroundResource(tab.imgResId);
         mTabLabel.setText(tab.labelResId);
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     public static class Tab {
