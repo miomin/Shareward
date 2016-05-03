@@ -5,7 +5,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.ToolbarActivity;
+import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.core.BaseFragment;
 import scu.miomin.com.shareward.widgets.tab.ShareTabLayout;

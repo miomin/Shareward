@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.NoneToolbarActivity;
+import scu.miomin.com.shareward.base.toolbar.NoneToolbarActivity;
 import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.core.AppStatusTracker;
 import scu.miomin.com.shareward.sample.LoginActivity;

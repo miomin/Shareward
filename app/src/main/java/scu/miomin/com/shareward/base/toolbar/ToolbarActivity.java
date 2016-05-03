@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.base;
+package scu.miomin.com.shareward.base.toolbar;
 
 import android.os.Build;
 import android.support.annotation.LayoutRes;

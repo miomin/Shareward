@@ -6,7 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.ToolbarActivity;
+import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
 
 
