@@ -38,8 +38,11 @@ public class SampleTabActivity extends ToolbarActivity implements ShareTabLayout
         mTabLayout.setCurrentTab(0);
     }
 
+    /**
+     * 监听切换到的tab
+     */
     @Override
-    public void onTabClick(int index) {
+    public void onTabSelected(int index) {
         try {
             fragment = tabs.get(index).targetFragmentClz.newInstance();
             getSupportFragmentManager().beginTransaction().replace(R.id.mFragmentContainerLayout, fragment).commitAllowingStateLoss();
@@ -49,5 +52,13 @@ public class SampleTabActivity extends ToolbarActivity implements ShareTabLayout
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 监听被取消选中的tab
+     */
+    @Override
+    public void onTabChangeToUnSelected(int index) {
+
     }
 }

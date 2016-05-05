@@ -1,0 +1,87 @@
+package scu.miomin.com.shareward.home;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.ViewGroup;
+
+import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
+import scu.miomin.com.shareward.constants.ActivityType;
+import scu.miomin.com.shareward.sample.SampleTitleFragment;
+
+
+/**
+ * Created by miomin on 16/5/2.
+ */
+public class HomePagerActivity extends ToolbarActivity implements ViewPager.OnPageChangeListener {
+
+    private ViewPager mHomepager;
+    private PagerAdapter mPagerAdapter;
+
+    @Override
+    protected void setUpView() {
+        setContentView(R.layout.activity_home_pager, ActivityType.MODE_TOOLBAR_BACK);
+    }
+
+    @Override
+    protected void setUpData(Bundle savedInstanceState) {
+        mHomepager = (ViewPager) findViewById(R.id.mHomepager);
+        mHomepager.setOffscreenPageLimit(3);
+        mHomepager.setOnPageChangeListener(this);
+        mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
+        mHomepager.setAdapter(mPagerAdapter);
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+    }
+
+    /**
+     * viewpager适配器
+     */
+    static class PagerAdapter extends FragmentStatePagerAdapter {
+
+        public PagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return SampleTitleFragment.newInstance("Page:" + position);
+        }
+
+        @Override
+        public int getCount() {
+            return 3;
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            super.destroyItem(container, position, object);
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            return super.instantiateItem(container, position);
+        }
+
+        @Override
+        public void setPrimaryItem(ViewGroup container, int position, Object object) {
+            super.setPrimaryItem(container, position, object);
+        }
+    }
+}

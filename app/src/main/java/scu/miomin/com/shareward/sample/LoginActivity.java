@@ -8,6 +8,7 @@ import android.view.View;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
+import scu.miomin.com.shareward.home.HomePagerActivity;
 
 
 /**
@@ -31,6 +32,6 @@ public class LoginActivity extends ToolbarActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this, SampleTabActivity.class));
+        startActivity(new Intent(this, HomePagerActivity.class));
     }
 }

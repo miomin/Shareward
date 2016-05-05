@@ -19,6 +19,7 @@ public class ShareTabLayout extends LinearLayout implements View.OnClickListener
     private OnTabClickListener onTabClickListener;
     private View selectView;
     private int tabCount;
+    private int currentIndex;
 
     public ShareTabLayout(Context context) {
         super(context);
@@ -72,7 +73,12 @@ public class ShareTabLayout extends LinearLayout implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        onTabClickListener.onTabClick((Integer) v.getTag());
+        onTabClickListener.onTabSelected((Integer) v.getTag());
+
+        if (currentIndex != (Integer) v.getTag())
+            onTabClickListener.onTabChangeToUnSelected(currentIndex);
+
+        currentIndex = (Integer) v.getTag();
 
         if (selectView != v) {
             v.setSelected(true);
@@ -84,6 +90,15 @@ public class ShareTabLayout extends LinearLayout implements View.OnClickListener
     }
 
     public interface OnTabClickListener {
-        void onTabClick(int index);
+
+        /**
+         * 监听切换到的tab
+         */
+        void onTabSelected(int index);
+
+        /**
+         * 监听被取消选中的tab
+         */
+        void onTabChangeToUnSelected(int index);
     }
 }
