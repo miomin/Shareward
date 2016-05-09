@@ -1,22 +1,24 @@
 package scu.miomin.com.shareward.log;
 
+import android.content.Context;
 import android.util.Log;
 
 import java.util.Hashtable;
 
+import scu.miomin.com.shareward.R;
+
 /**
- * The class for print log
- *
  * @author kesenhoo and miomin
  */
 public class MyLogger {
 
     private final static boolean logFlag = true;
 
-    public final static String tag = "[AppName]";
+    public static String tag = "[AppName]";
     private final static int logLevel = Log.VERBOSE;
     private static Hashtable<String, MyLogger> sLoggerTable = new Hashtable<String, MyLogger>();
     private String mClassName;
+    private Context context;
 
     private static MyLogger log_dev1;
     private static MyLogger log_dev2;
@@ -24,8 +26,10 @@ public class MyLogger {
     private static final String DEV_1 = "@dev_1@ ";
     private static final String DEV_2 = "@dev_2@ ";
 
-    private MyLogger(String name) {
-        mClassName = name;
+    private MyLogger(String name, Context context) {
+        this.mClassName = name;
+        this.context = context;
+        tag = context.getResources().getString(R.string.app_name);
     }
 
     /**
@@ -33,10 +37,10 @@ public class MyLogger {
      * @return
      */
     @SuppressWarnings("unused")
-    private static MyLogger getLogger(String className) {
+    private static MyLogger getLogger(String className, Context context) {
         MyLogger classLogger = (MyLogger) sLoggerTable.get(className);
         if (classLogger == null) {
-            classLogger = new MyLogger(className);
+            classLogger = new MyLogger(className, context);
             sLoggerTable.put(className, classLogger);
         }
         return classLogger;
@@ -47,9 +51,9 @@ public class MyLogger {
      *
      * @return
      */
-    public static MyLogger Log_dev1() {
+    public static MyLogger Log_dev1(Context context) {
         if (log_dev1 == null) {
-            log_dev1 = new MyLogger(DEV_1);
+            log_dev1 = new MyLogger(DEV_1, context);
         }
         return log_dev1;
     }
@@ -59,9 +63,9 @@ public class MyLogger {
      *
      * @return
      */
-    public static MyLogger Log_dev2() {
+    public static MyLogger Log_dev2(Context context) {
         if (log_dev2 == null) {
-            log_dev2 = new MyLogger(DEV_2);
+            log_dev2 = new MyLogger(DEV_2, context);
         }
         return log_dev2;
     }

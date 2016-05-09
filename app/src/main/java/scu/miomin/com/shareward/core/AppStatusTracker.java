@@ -4,7 +4,6 @@ package scu.miomin.com.shareward.core;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,12 +84,11 @@ public class AppStatusTracker implements Application.ActivityLifecycleCallbacks 
 
     @Override
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-        Log.e("miomin", activity.toString() + " onActivityCreated");
+
     }
 
     @Override
     public void onActivityStarted(Activity activity) {
-        Log.e("miomin", activity.toString() + " onActivityStarted");
         aliveActivityCount++;
     }
 
@@ -99,19 +97,17 @@ public class AppStatusTracker implements Application.ActivityLifecycleCallbacks 
      */
     @Override
     public void onActivityResumed(Activity activity) {
-        Log.e("miomin", activity.toString() + " onActivityResumed");
         isForground = true;
         deathtime = 0l;
     }
 
     @Override
     public void onActivityPaused(Activity activity) {
-        Log.e("miomin", activity.toString() + " onActivityPaused");
+
     }
 
     @Override
     public void onActivityStopped(Activity activity) {
-        Log.e("miomin", activity.toString() + " onActivityStopped");
         aliveActivityCount--;
         // 如果处于前台的activity的数量==0，表明APP在后台运行
         if (aliveActivityCount == 0) {
@@ -127,7 +123,6 @@ public class AppStatusTracker implements Application.ActivityLifecycleCallbacks 
 
     @Override
     public void onActivityDestroyed(Activity activity) {
-        Log.e("miomin", activity.toString() + " onActivityDestroyed");
-    }
 
+    }
 }

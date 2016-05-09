@@ -5,12 +5,12 @@ import android.support.annotation.LayoutRes;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.widget.TextView;
 
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.core.BaseActivity;
+import scu.miomin.com.shareward.log.MyLogger;
 
 /**
  * Created by miomin on 16/4/24.
@@ -85,11 +85,11 @@ public abstract class ToolbarActivity extends BaseActivity {
     public void setUpTitle(String title) {
 
         if (toolbar == null || toolbar_title == null) {
-            Log.i("miomin", "notitle");
+            MyLogger.Log_dev1(getApplicationContext()).i("notitle");
             return;
         }
 
-        Log.i("miomin", "settitle");
+        MyLogger.Log_dev1(getApplicationContext()).i("setuptitle");
         toolbar_title.setText(title);
     }
 
