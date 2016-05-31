@@ -2,4 +2,6 @@
 <resources>
     <item name="toolbar" type="id" />
     <item name="toolbar_title" type="id" />
+    <item name="swipeRefreshLayout" type="id"></item>
+    <item name="recyclerView" type="id"></item>
 </resources>
