@@ -18,6 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getContentView();
         Log.i("miomin", getClass().getSimpleName());
         // 添加一个Activity实例到AppStatusTracker
         AppStatusTracker.getInstance(getApplication()).addActivity(this);
@@ -33,6 +34,8 @@ public abstract class BaseActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    protected abstract void getContentView();
 
     protected abstract void setUpView();
 

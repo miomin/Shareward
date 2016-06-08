@@ -19,15 +19,19 @@ public class LoginActivity extends ToolbarActivity implements View.OnClickListen
     private FloatingActionButton fab;
 
     @Override
-    protected void setUpView() {
+    protected void getContentView() {
         setContentView(R.layout.activity_login, ActivityType.MODE_TOOLBAR);
+    }
+
+    @Override
+    protected void setUpView() {
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(this);
     }
 
     @Override
     protected void setUpData(Bundle savedInstanceState) {
         setUpTitle("登录");
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(this);
     }
 
     @Override

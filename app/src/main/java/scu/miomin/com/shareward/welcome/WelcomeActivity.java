@@ -9,7 +9,7 @@ import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.NoneToolbarActivity;
 import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.core.AppStatusTracker;
-import scu.miomin.com.shareward.sample.SampleListActivity;
+import scu.miomin.com.shareward.sample.LoginActivity;
 
 /**
  * Created by Miomin and Stay on 2/2/16.
@@ -24,8 +24,12 @@ public class WelcomeActivity extends NoneToolbarActivity {
     }
 
     @Override
-    protected void setUpView() {
+    protected void getContentView() {
         setContentView(R.layout.activity_welcome);
+    }
+
+    @Override
+    protected void setUpView() {
     }
 
     @Override
@@ -37,7 +41,7 @@ public class WelcomeActivity extends NoneToolbarActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            startActivity(new Intent(WelcomeActivity.this, SampleListActivity.class));
+            startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
             finish();
         }
     };

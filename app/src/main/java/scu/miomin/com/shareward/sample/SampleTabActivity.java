@@ -18,14 +18,18 @@ public class SampleTabActivity extends ToolbarActivity implements ShareTabLayout
     private ArrayList<ShareTabView.Tab> tabs = new ArrayList<>();
 
     @Override
-    protected void setUpView() {
+    protected void getContentView() {
         setContentView(R.layout.activity_sample_tab, ActivityType.MODE_TOOLBAR_BACK);
+    }
+
+    @Override
+    protected void setUpView() {
         mTabLayout = (ShareTabLayout) findViewById(R.id.mTabLayout);
     }
 
     @Override
     protected void setUpData(Bundle savedInstanceState) {
-        tabs.add(new ShareTabView.Tab(R.drawable.tab_main_msg, R.string.tab_label_msg, SampleFragment.class));
+        tabs.add(new ShareTabView.Tab(R.drawable.tab_main_msg, R.string.tab_label_msg, SampleListFragment.class));
         tabs.add(new ShareTabView.Tab(R.drawable.tab_main_home, R.string.tab_label_home, SampleFragment.class));
         tabs.add(new ShareTabView.Tab(R.drawable.tab_main_setting, R.string.tab_label_setting, SampleFragment.class));
 

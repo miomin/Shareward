@@ -18,16 +18,18 @@ public class HomeActivity extends ToolbarActivity {
     private Button mHomeProfileBtn;
 
     @Override
-    protected void setUpView() {
+    protected void getContentView() {
         setContentView(R.layout.activity_home, ActivityType.MODE_TOOLBAR_BACK);
     }
 
-    /**
-     * 代替onCreate
-     */
+    @Override
+    protected void setUpView() {
+        mHomeProfileBtn = (Button) findViewById(R.id.mHomeProfileBtn);
+    }
+
     @Override
     protected void setUpData(Bundle savedInstanceState) {
-        mHomeProfileBtn = (Button) findViewById(R.id.mHomeProfileBtn);
+        
     }
 
     @Override

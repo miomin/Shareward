@@ -1,7 +1,6 @@
 package scu.miomin.com.shareward.sample;
 
 import android.app.ProgressDialog;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +14,6 @@ import scu.miomin.com.shareward.core.BaseFragment;
  */
 public class SampleFragment extends BaseFragment {
 
-    // fragment的布局
-    private View fragmentView;
     private ProgressDialog dialog;
 
     private Button btn_query;
@@ -27,28 +24,26 @@ public class SampleFragment extends BaseFragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected View getContentView(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.fragment_sample, container, false);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // 获取Fragment的布局
-        fragmentView = inflater.inflate(R.layout.fragment_sample, container, false);
+    protected void setUpView() {
         btn_query = (Button) fragmentView.findViewById(R.id.btn_query);
 
+    }
+
+    @Override
+    protected void setUpData() {
         dialog = new ProgressDialog(getActivity());
         dialog.setMessage(getResources().getString(R.string.app_name));
-
         btn_query.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 query();
             }
         });
-
-        return fragmentView;
     }
 
     public void query() {

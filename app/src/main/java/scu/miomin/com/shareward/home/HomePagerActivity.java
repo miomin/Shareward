@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.sample.SampleTitleFragment;
+import scu.miomin.com.shareward.sample.SampleBundleFragment;
 
 
 /**
@@ -22,13 +22,17 @@ public class HomePagerActivity extends ToolbarActivity implements ViewPager.OnPa
     private PagerAdapter mPagerAdapter;
 
     @Override
-    protected void setUpView() {
+    protected void getContentView() {
         setContentView(R.layout.activity_home_pager, ActivityType.MODE_TOOLBAR_BACK);
     }
 
     @Override
-    protected void setUpData(Bundle savedInstanceState) {
+    protected void setUpView() {
         mHomepager = (ViewPager) findViewById(R.id.mHomepager);
+    }
+
+    @Override
+    protected void setUpData(Bundle savedInstanceState) {
         mHomepager.setOffscreenPageLimit(3);
         mHomepager.setOnPageChangeListener(this);
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
@@ -61,7 +65,7 @@ public class HomePagerActivity extends ToolbarActivity implements ViewPager.OnPa
 
         @Override
         public Fragment getItem(int position) {
-            return SampleTitleFragment.newInstance("Page:" + position);
+            return SampleBundleFragment.newInstance("Page:" + position);
         }
 
         @Override

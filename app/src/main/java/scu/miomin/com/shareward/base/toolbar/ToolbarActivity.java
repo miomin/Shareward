@@ -21,7 +21,6 @@ public abstract class ToolbarActivity extends BaseActivity {
     private TextView toolbar_title;
     protected ActionBar actionBar;
 
-
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);

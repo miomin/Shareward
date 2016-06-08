@@ -1,6 +1,5 @@
 package scu.miomin.com.shareward.list;
 
-import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
@@ -8,29 +7,27 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-
+import scu.miomin.com.shareward.core.BaseFragment;
 
 /**
- * Created by Miomin and Stay on 2/2/16.
+ * Created by 莫绪旻 on 16/06/09.
  */
-public abstract class BaseListActivity<T> extends ToolbarActivity implements SwipeRefreshLayout.OnRefreshListener {
+public abstract class BaseListFragment<T> extends BaseFragment implements SwipeRefreshLayout.OnRefreshListener {
 
     protected SwipeRefreshLayout mSwipeRefreshLayout;
     protected RecyclerView mRecyclerView;
     protected BaseListAdapter adapter;
     protected ArrayList<T> dataList = new ArrayList<>();
 
-
     @Override
     protected void setUpView() {
-        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+        mSwipeRefreshLayout = (SwipeRefreshLayout) fragmentView.findViewById(R.id.swipeRefreshLayout);
         mSwipeRefreshLayout.setOnRefreshListener(this);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        mRecyclerView = (RecyclerView) fragmentView.findViewById(R.id.recyclerView);
     }
 
     @Override
-    protected void setUpData(Bundle savedInstanceState) {
+    protected void setUpData() {
         mRecyclerView.setLayoutManager(getLayoutManager());
         adapter = new BaseListAdapter();
         mRecyclerView.setAdapter(adapter);

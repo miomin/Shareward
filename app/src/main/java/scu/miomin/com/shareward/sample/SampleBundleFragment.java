@@ -13,18 +13,16 @@ import scu.miomin.com.shareward.core.BaseFragment;
 /**
  * Created by 莫绪旻 on 16/2/29.
  */
-public class SampleTitleFragment extends BaseFragment {
+public class SampleBundleFragment extends BaseFragment {
 
     // fragment的布局
-    private View fragmentView;
     private ProgressDialog dialog;
-
     private Button btn_query;
 
     private String title;
 
-    public static SampleTitleFragment newInstance(String title) {
-        SampleTitleFragment fragment = new SampleTitleFragment();
+    public static SampleBundleFragment newInstance(String title) {
+        SampleBundleFragment fragment = new SampleBundleFragment();
         Bundle bundle = new Bundle();
         bundle.putString("title", title);
         fragment.setArguments(bundle);
@@ -35,16 +33,20 @@ public class SampleTitleFragment extends BaseFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         title = getArguments().getString("title");
-//        getActivity().setTitle(title);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // 获取Fragment的布局
-        fragmentView = inflater.inflate(R.layout.fragment_sample, container, false);
-        btn_query = (Button) fragmentView.findViewById(R.id.btn_query);
+    protected View getContentView(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.fragment_sample, container, false);
+    }
 
+    @Override
+    protected void setUpView() {
+        btn_query = (Button) fragmentView.findViewById(R.id.btn_query);
+    }
+
+    @Override
+    protected void setUpData() {
         dialog = new ProgressDialog(getActivity());
         dialog.setMessage(getResources().getString(R.string.app_name));
 
@@ -55,8 +57,6 @@ public class SampleTitleFragment extends BaseFragment {
                 query();
             }
         });
-
-        return fragmentView;
     }
 
     public void query() {

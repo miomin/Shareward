@@ -1,7 +1,6 @@
 package scu.miomin.com.shareward.sample;
 
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,29 +9,32 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.list.BaseListActivity;
+import scu.miomin.com.shareward.list.BaseListFragment;
 import scu.miomin.com.shareward.list.BaseViewHolder;
 
 /**
  * Created by 莫绪旻 on 16/2/29.
  */
-public class SampleListActivity extends BaseListActivity<String> implements SwipeRefreshLayout.OnRefreshListener {
+public class SampleListFragment extends BaseListFragment<String> {
 
-    @Override
-    protected void getContentView() {
-        setContentView(R.layout.activity_sample_list, ActivityType.MODE_TOOLBAR);
+    public static SampleListFragment newInstance() {
+        SampleListFragment fragment = new SampleListFragment();
+        return fragment;
     }
 
     @Override
-    protected void setUpData(Bundle savedInstanceState) {
-        super.setUpData(savedInstanceState);
-        setUpTitle("SampleList");
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    protected View getContentView(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.fragment_sample_list, container, false);
     }
 
     @Override
     protected RecyclerView.LayoutManager getLayoutManager() {
-        return new LinearLayoutManager(getApplicationContext());
+        return new LinearLayoutManager(getActivity().getApplicationContext());
     }
 
     @Override

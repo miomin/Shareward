@@ -2,15 +2,36 @@ package scu.miomin.com.shareward.core;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 /**
- * Created by Stay on 22/10/15.
- * Powered by www.stay4it.com
+ * Created by Miomin on 22/10/15.
  */
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
+
+    // fragment的布局
+    protected View fragmentView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        // 获取Fragment的布局
+        fragmentView = getContentView(inflater, container);
+        setUpView();
+        setUpData();
+        return fragmentView;
+    }
+
+    protected abstract View getContentView(LayoutInflater inflater, ViewGroup container);
+
+    protected abstract void setUpView();
+
+    protected abstract void setUpData();
 }
