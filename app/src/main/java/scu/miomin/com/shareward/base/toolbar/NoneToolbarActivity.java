@@ -5,7 +5,7 @@ import android.support.annotation.LayoutRes;
 import scu.miomin.com.shareward.core.BaseActivity;
 
 /**
- * Created by miomin on 16/4/24.
+ * Created by 莫绪旻 on 16/4/24.
  */
 public abstract class NoneToolbarActivity extends BaseActivity {
 

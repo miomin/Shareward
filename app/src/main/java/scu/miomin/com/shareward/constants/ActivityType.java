@@ -1,7 +1,7 @@
 package scu.miomin.com.shareward.constants;
 
 /**
- * Created by miomin on 16/4/21.
+ * Created by 莫绪旻 on 16/4/21.
  */
 public class ActivityType {
 

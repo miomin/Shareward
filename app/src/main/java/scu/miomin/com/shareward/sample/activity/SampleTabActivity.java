@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample;
+package scu.miomin.com.shareward.sample.activity;
 
 import android.os.Bundle;
 
@@ -8,6 +8,7 @@ import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.core.BaseFragment;
+import scu.miomin.com.shareward.sample.fragment.SampleFragment;
 import scu.miomin.com.shareward.widgets.tab.ShareTabLayout;
 import scu.miomin.com.shareward.widgets.tab.ShareTabView;
 
@@ -29,7 +30,7 @@ public class SampleTabActivity extends ToolbarActivity implements ShareTabLayout
 
     @Override
     protected void setUpData(Bundle savedInstanceState) {
-        tabs.add(new ShareTabView.Tab(R.drawable.tab_main_msg, R.string.tab_label_msg, SampleListFragment.class));
+        tabs.add(new ShareTabView.Tab(R.drawable.tab_main_msg, R.string.tab_label_msg, SampleFragment.class));
         tabs.add(new ShareTabView.Tab(R.drawable.tab_main_home, R.string.tab_label_home, SampleFragment.class));
         tabs.add(new ShareTabView.Tab(R.drawable.tab_main_setting, R.string.tab_label_setting, SampleFragment.class));
 

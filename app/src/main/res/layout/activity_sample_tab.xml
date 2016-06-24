@@ -3,10 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        layout="@layout/widget_toolbar"
-        android:theme="@style/AppTheme.AppBarOverlay" />
-
     <scu.miomin.com.shareward.widgets.tab.ShareTabLayout
         android:id="@+id/mTabLayout"
         android:layout_width="match_parent"
@@ -24,8 +20,7 @@
         android:id="@+id/mFragmentContainerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/divider"
-        android:layout_below="@id/toolbar" />
+        android:layout_above="@id/divider"/>
 
 </RelativeLayout>
 

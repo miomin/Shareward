@@ -1,7 +1,7 @@
 package scu.miomin.com.shareward.constants;
 
 /**
- * Created by Stay on 4/2/2016.
+ * Created by 莫绪旻 on 4/2/2016.
  */
 public class APPAction {
     public static final String KEY_HOME_ACTION = "key_home_action";

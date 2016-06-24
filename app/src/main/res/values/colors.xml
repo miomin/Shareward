@@ -15,6 +15,7 @@
     <color name="whiteLight">#ffffff</color>
     <color name="whiteDivideLine">#f1f1f1</color>
     <color name="whitePrimary">#dcdddf</color>
+    <color name="whiteDark">#cbcdcf</color>
 
     <color name="transparent">#00000000</color>
     <color name="blackPrimary">#000000</color>
@@ -22,7 +23,7 @@
     <color name="gray">#30000000</color>
     <color name="grayLight">#a6a3a3</color>
 
-    <color name="grey">#eaeaea</color>
+    <color name="grey">#b4b3b3</color>
 
 
     <color name="bg_color">#EDEDED</color>

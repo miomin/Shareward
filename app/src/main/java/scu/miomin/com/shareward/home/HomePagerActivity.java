@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.sample.SampleBundleFragment;
+import scu.miomin.com.shareward.sample.fragment.SampleBundleFragment;
 
 
 /**
- * Created by miomin on 16/5/2.
+ * Created by 莫绪旻 on 16/5/2.
  */
 public class HomePagerActivity extends ToolbarActivity implements ViewPager.OnPageChangeListener {
 

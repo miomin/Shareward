@@ -11,7 +11,7 @@ import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 
 
 /**
- * Created by Miomin and Stay on 2/2/16.
+ * Created by 莫绪旻 and Stay on 2/2/16.
  */
 public class HomeActivity extends ToolbarActivity {
 

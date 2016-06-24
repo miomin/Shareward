@@ -29,8 +29,7 @@
     <style name="ToolBarStyle">
         <item name="android:layout_width">match_parent</item>
         <!--<item name="android:layout_height">?attr/actionBarSize</item>-->
-        <item name="android:layout_height">45dp</item>
-        <item name="android:minHeight">45dp</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:background">?attr/colorPrimary</item>
     </style>
 

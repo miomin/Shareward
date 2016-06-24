@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample;
+package scu.miomin.com.shareward.sample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.View;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.home.HomePagerActivity;
+import scu.miomin.com.shareward.sample.recyclerview.SampleListSplashActivity;
 
 
 /**
@@ -36,6 +36,6 @@ public class LoginActivity extends ToolbarActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this, HomePagerActivity.class));
+        startActivity(new Intent(this, SampleListSplashActivity.class));
     }
 }

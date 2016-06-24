@@ -12,7 +12,7 @@ import scu.miomin.com.shareward.constants.APPStatu;
 
 /**
  * 记录APP状态
- * Created by Miomin and Stay on 4/2/2016.
+ * Created by 莫绪旻 and Stay on 4/2/2016.
  */
 public class AppStatusTracker implements Application.ActivityLifecycleCallbacks {
 

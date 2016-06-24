@@ -3,7 +3,7 @@ package scu.miomin.com.shareward.constants;
 import android.view.Gravity;
 
 /**
- * Created by miomin on 16/4/21.
+ * Created by 莫绪旻 on 16/4/21.
  */
 public class APPGravity {
     public static final int LEFT = Gravity.LEFT;

@@ -13,17 +13,17 @@ import scu.miomin.com.shareward.core.BaseActivity;
 import scu.miomin.com.shareward.log.MyLogger;
 
 /**
- * Created by miomin on 16/4/24.
+ * Created by 莫绪旻 on 16/4/24.
  */
 public abstract class ToolbarActivity extends BaseActivity {
 
     protected Toolbar toolbar;
     private TextView toolbar_title;
     protected ActionBar actionBar;
+    private ToolBarHelper mToolBarHelper ;
 
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
-        super.setContentView(layoutResID);
         setContentView(layoutResID, ActivityType.MODE_TOOLBAR);
     }
 
@@ -31,20 +31,25 @@ public abstract class ToolbarActivity extends BaseActivity {
      * 根据Activity类型确定Toolbar需要做哪些初始化
      */
     protected void setContentView(@LayoutRes int layoutResID, int mode) {
-        super.setContentView(layoutResID);
-        setToolbar(mode);
+        setToolbar(mode,layoutResID);
     }
 
     /**
      * 设置Toolbar
      */
-    private void setToolbar(int mode) {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar_title = (TextView) findViewById(R.id.toolbar_title);
-        toolbar.setTitle("");
-        setSupportActionBar(toolbar);
+    private void setToolbar(int mode,@LayoutRes int layoutResID) {
 
+        mToolBarHelper = new ToolBarHelper(this,layoutResID) ;
+        toolbar = mToolBarHelper.getToolBar() ;
+        setContentView(mToolBarHelper.getContentView());
+        setSupportActionBar(toolbar);
+        toolbar.setContentInsetsRelative(0,0);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         actionBar = getSupportActionBar();
+
+        toolbar_title = (TextView) findViewById(R.id.toolbar_title);
 
         switch (mode) {
             case ActivityType.MODE_TOOLBAR:
@@ -72,6 +77,7 @@ public abstract class ToolbarActivity extends BaseActivity {
             return;
         }
 
+        toolbar.setTitle("");
         toolbar_title.setText(title);
         toolbar_title.setGravity(gravity);
         toolbar_title.setTextSize(titleSize);
@@ -88,6 +94,7 @@ public abstract class ToolbarActivity extends BaseActivity {
             return;
         }
 
+        toolbar.setTitle("");
         MyLogger.Log_dev1(getApplicationContext()).i("setuptitle");
         toolbar_title.setText(title);
     }

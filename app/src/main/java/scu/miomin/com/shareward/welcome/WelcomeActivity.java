@@ -9,10 +9,10 @@ import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.NoneToolbarActivity;
 import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.core.AppStatusTracker;
-import scu.miomin.com.shareward.sample.LoginActivity;
+import scu.miomin.com.shareward.sample.activity.LoginActivity;
 
 /**
- * Created by Miomin and Stay on 2/2/16.
+ * Created by miomin and Stay on 2/2/16.
  */
 public class WelcomeActivity extends NoneToolbarActivity {
 
