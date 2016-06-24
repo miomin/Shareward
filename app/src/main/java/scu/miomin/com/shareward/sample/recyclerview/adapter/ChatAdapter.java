@@ -12,7 +12,7 @@ import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 
 
 /**
- * Created by zhy on 15/9/4.
+ * Created by 莫绪旻 on 16/6/24.
  */
 public class ChatAdapter extends ShareMultiItemCommonAdapter<ChatMessage> {
 

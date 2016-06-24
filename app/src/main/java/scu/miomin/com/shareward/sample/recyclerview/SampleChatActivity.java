@@ -14,7 +14,9 @@ import scu.miomin.com.shareward.sample.recyclerview.adapter.ChatAdapter;
 import scu.miomin.com.shareward.sample.recyclerview.bean.ChatMessage;
 import scu.miomin.com.shareward.widgets.recyclerview.ShareOnItemClickListener;
 
-
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class SampleChatActivity extends ToolbarActivity {
 
     private RecyclerView mRecyclerView;

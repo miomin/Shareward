@@ -1,11 +1,13 @@
 package scu.miomin.com.shareward.sample.recyclerview.bean;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class ChatMessage {
     private int icon;
     private String name;

@@ -9,6 +9,9 @@ import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class SampleListSplashActivity extends ToolbarActivity implements View.OnClickListener {
 
     @Override

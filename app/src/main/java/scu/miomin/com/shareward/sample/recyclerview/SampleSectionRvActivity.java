@@ -19,6 +19,9 @@ import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 import scu.miomin.com.shareward.widgets.recyclerview.support.ShareSectionAdapter;
 import scu.miomin.com.shareward.widgets.recyclerview.support.ShareSectionSupport;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class SampleSectionRvActivity extends ToolbarActivity {
 
     private RecyclerView mRecyclerView;

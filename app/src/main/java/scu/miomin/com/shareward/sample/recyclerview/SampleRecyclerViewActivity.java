@@ -14,6 +14,9 @@ import scu.miomin.com.shareward.widgets.recyclerview.ShareCommonAdapter;
 import scu.miomin.com.shareward.widgets.recyclerview.ShareDividerItemDecoration;
 import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class SampleRecyclerViewActivity extends ToolbarActivity {
 
     private RecyclerView mRecyclerView;
