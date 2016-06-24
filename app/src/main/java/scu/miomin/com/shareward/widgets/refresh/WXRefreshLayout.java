@@ -212,6 +212,9 @@ import android.view.Gravity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class WXRefreshLayout extends LinearLayout {
 
     private static final int DEFAULT_CIRCLE_SIZE = 42;

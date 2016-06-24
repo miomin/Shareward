@@ -7,6 +7,9 @@ import java.util.List;
 
 import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public abstract class ShareMultiItemCommonAdapter<T> extends ShareCommonAdapter<T> {
 
     protected ShareMultiItemTypeSupport<T> mMultiItemTypeSupport;

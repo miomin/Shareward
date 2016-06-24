@@ -1,7 +1,7 @@
 package scu.miomin.com.shareward.widgets.recyclerview.support;
 
 /**
- * Created by zhy on 16/4/9.
+ * Created by 莫绪旻 on 16/6/24.
  */
 public interface ShareSectionSupport<T> {
     public int sectionHeaderLayoutId();

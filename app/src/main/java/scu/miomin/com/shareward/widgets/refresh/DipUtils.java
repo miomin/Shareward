@@ -208,6 +208,9 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public abstract class DipUtils {
 
     public static float dipToPx(Context context, float value) {

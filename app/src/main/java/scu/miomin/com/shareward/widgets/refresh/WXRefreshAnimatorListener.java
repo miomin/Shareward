@@ -206,6 +206,9 @@ package scu.miomin.com.shareward.widgets.refresh;
 
 import android.animation.Animator;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class WXRefreshAnimatorListener implements Animator.AnimatorListener {
     @Override
     public void onAnimationStart(Animator animation) {

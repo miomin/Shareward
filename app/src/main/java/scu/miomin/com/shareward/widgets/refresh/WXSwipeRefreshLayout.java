@@ -224,6 +224,9 @@ import android.widget.FrameLayout;
 
 import scu.miomin.com.shareward.R;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class WXSwipeRefreshLayout extends FrameLayout {
 
     private static final int LOADING_VIEW_FINAL_HEIGHT_DP = 80;

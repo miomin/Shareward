@@ -13,7 +13,7 @@ import scu.miomin.com.shareward.widgets.recyclerview.ShareMultiItemTypeSupport;
 import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 
 /**
- * Created by zhy on 16/4/9.
+ * Created by 莫绪旻 on 16/6/24.
  */
 public abstract class ShareSectionAdapter<T> extends ShareMultiItemCommonAdapter<T> {
     private ShareSectionSupport mSectionSupport;

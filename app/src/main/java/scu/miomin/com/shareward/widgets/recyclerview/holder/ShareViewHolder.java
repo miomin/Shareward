@@ -20,6 +20,9 @@ import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+/**
+ * Created by 莫绪旻 on 16/6/24.
+ */
 public class ShareViewHolder extends RecyclerView.ViewHolder {
     private SparseArray<View> mViews;
     private int mPosition;

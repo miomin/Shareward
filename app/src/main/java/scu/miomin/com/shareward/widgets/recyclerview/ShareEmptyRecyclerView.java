@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * https://gist.github.com/adelnizamutdinov/31c8f054d1af4588dc5c
+ * Created by 莫绪旻 on 16/6/24.
  */
 public class ShareEmptyRecyclerView extends RecyclerView {
     View emptyView;

@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import scu.miomin.com.shareward.R;
 
 /**
- * Created by miomin on 16/6/24.
+ * Created by 莫绪旻 on 16/6/24.
  */
 public class ToolBarHelper {
 
