@@ -9,7 +9,7 @@ import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.base.toolbar.NoneToolbarActivity;
 import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.core.AppStatusTracker;
-import scu.miomin.com.shareward.sample.recyclerview.SampleListSplashActivity;
+import scu.miomin.com.shareward.sample.index.ShareIndexActivity;
 
 /**
  * Created by miomin and Stay on 2/2/16.
@@ -41,7 +41,7 @@ public class WelcomeActivity extends NoneToolbarActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            startActivity(new Intent(WelcomeActivity.this, SampleListSplashActivity.class));
+            startActivity(new Intent(WelcomeActivity.this, ShareIndexActivity.class));
             finish();
         }
     };

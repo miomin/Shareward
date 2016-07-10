@@ -3,9 +3,10 @@
     android:id="@+id/id_header_title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#8bb9ff"
-    android:padding="3dp"
+    android:background="@color/colorPrimary"
+    android:padding="6dp"
     android:text="A"
+    android:textColor="@color/whitePrimary"
     android:textStyle="bold">
 
 </TextView>

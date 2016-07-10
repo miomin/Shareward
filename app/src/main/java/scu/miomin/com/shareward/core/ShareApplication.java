@@ -11,7 +11,7 @@ import com.squareup.leakcanary.LeakCanary;
  */
 public class ShareApplication extends Application {
 
-    public static Context context;
+    private static Context context;
 
     @Override
     public void onCreate() {
@@ -19,5 +19,9 @@ public class ShareApplication extends Application {
         context = getApplicationContext();
         Fresco.initialize(this);
         LeakCanary.install(this);
+    }
+
+    public static Context getContext() {
+        return context;
     }
 }
