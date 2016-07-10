@@ -62,7 +62,7 @@ public class SampleSectionRvActivity extends ToolbarActivity {
             }
         };
 
-        ShareSectionAdapter adapter = new ShareSectionAdapter<String>(this, R.layout.item_list, mDatas, sectionSupport) {
+        ShareSectionAdapter adapter = new ShareSectionAdapter<String>(this, R.layout.item_section_list, mDatas, sectionSupport) {
 
             @Override
             public void convert(ShareViewHolder holder, String s) {

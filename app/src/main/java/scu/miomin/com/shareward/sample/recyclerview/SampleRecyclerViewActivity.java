@@ -1,11 +1,14 @@
 package scu.miomin.com.shareward.sample.recyclerview;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,10 +49,16 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
         initDatas();
         mRecyclerView.setAdapter(new ShareCommonAdapter<String>(this, R.layout.item_list, mDatas) {
             @Override
-            public void convert(ShareViewHolder holder, String s) {
-                holder.setText(R.id.id_item_list_title, s);
+            public void convert(ShareViewHolder holder, String text) {
+                holder.setText(R.id.id_item_list_title, text);
+
+                Uri uri = Uri.parse("https://avatars2.githubusercontent.com/u/11516748?v=3&s=460");
+                SimpleDraweeView draweeView = holder.getView(R.id.item_image);
+                draweeView.setImageURI(uri);
             }
         });
+
+
         LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
         final View view = inflater.inflate(R.layout.refresh_view, null);
         final TextView textView = (TextView) view.findViewById(R.id.title);
