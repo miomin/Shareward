@@ -1,16 +1,22 @@
 # Shareward by miomin
 Android快速开发框架
 
-参考stay老师的：Andorid快速开发框架
-
 -------------------
 
 # 简介
 
-## 1、解决APP被强杀的空指针
+## 1、解决APP被强杀造成再启动NPE
 
-## 2、提供判断APP位于前台/后台的API
+## 2、支持APP前后台判断
 
-## 3、封装Toolbar
+## 3、ToolbarActivity
 
-## 4、封装底部Tab
+## 4、底部Tab栏
+
+## 5、RecyclerView通用Adapter、ViewHolder
+
+## 6、下拉刷新、上拉加载更多组件
+
+## 7、接入LeakCanary
+
+## 8、接入UIL、Volley、FastJson

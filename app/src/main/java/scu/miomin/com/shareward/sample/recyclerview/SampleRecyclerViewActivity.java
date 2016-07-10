@@ -3,6 +3,9 @@ package scu.miomin.com.shareward.sample.recyclerview;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +16,7 @@ import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.widgets.recyclerview.ShareCommonAdapter;
 import scu.miomin.com.shareward.widgets.recyclerview.ShareDividerItemDecoration;
 import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
+import scu.miomin.com.shareward.widgets.swiperefresh.core.ShareSwipeRefreshLayout;
 
 /**
  * Created by 莫绪旻 on 16/6/24.
@@ -20,6 +24,7 @@ import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 public class SampleRecyclerViewActivity extends ToolbarActivity {
 
     private RecyclerView mRecyclerView;
+    private ShareSwipeRefreshLayout swipeRefreshLayout;
     private List<String> mDatas = new ArrayList<>();
 
     @Override
@@ -29,6 +34,7 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
 
     @Override
     protected void setUpView() {
+        swipeRefreshLayout = (ShareSwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addItemDecoration(new ShareDividerItemDecoration(this, ShareDividerItemDecoration.VERTICAL_LIST));
@@ -42,6 +48,51 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
             @Override
             public void convert(ShareViewHolder holder, String s) {
                 holder.setText(R.id.id_item_list_title, s);
+            }
+        });
+        LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
+        final View view = inflater.inflate(R.layout.refresh_view, null);
+        final TextView textView = (TextView) view.findViewById(R.id.title);
+        swipeRefreshLayout.setHeaderView(view);
+        swipeRefreshLayout.setOnRefreshListener(new ShareSwipeRefreshLayout.WXOnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+            }
+
+            @Override
+            public void onLoading() {
+
+            }
+
+            @Override
+            public void onRefreshPulStateChange(float percent, int state) {
+                switch (state) {
+                    case ShareSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
+                        textView.setText("下拉刷新");
+                        break;
+                    case ShareSwipeRefreshLayout.OVER_TRIGGER_POINT:
+                        textView.setText("松开刷新");
+                        break;
+                    case ShareSwipeRefreshLayout.START:
+                        textView.setText("正在刷新");
+                        break;
+                }
+            }
+
+            @Override
+            public void onLoadmorePullStateChange(float percent, int state) {
+                switch (state) {
+                    case ShareSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
+                        swipeRefreshLayout.setLoaderViewText("上拉加载");
+                        break;
+                    case ShareSwipeRefreshLayout.OVER_TRIGGER_POINT:
+                        swipeRefreshLayout.setLoaderViewText("松开加载");
+                        break;
+                    case ShareSwipeRefreshLayout.START:
+                        swipeRefreshLayout.setLoaderViewText("正在加载");
+                        break;
+                }
             }
         });
     }
