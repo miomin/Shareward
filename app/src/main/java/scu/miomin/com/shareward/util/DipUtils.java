@@ -202,7 +202,7 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package scu.miomin.com.shareward.widgets.refresh;
+package scu.miomin.com.shareward.util;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

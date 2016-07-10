@@ -201,7 +201,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package scu.miomin.com.shareward.widgets.refresh;
+package scu.miomin.com.shareward.widgets.swiperefresh.drawable;
 
 import android.content.Context;
 import android.content.res.Resources;
