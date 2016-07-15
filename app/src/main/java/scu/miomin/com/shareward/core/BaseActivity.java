@@ -4,12 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-
 import scu.miomin.com.shareward.constants.APPAction;
 import scu.miomin.com.shareward.constants.APPStatu;
-import scu.miomin.com.shareward.welcome.WelcomeActivity;
+import scu.miomin.com.shareward.splash.SplashActivity;
 
 
 /**
@@ -57,7 +54,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 如果App被kill掉了，应该回到welcomeActivity（singtask），重新进入APP正常的启动流程
      */
     protected void protectApp() {
-        Intent intent = new Intent(this, WelcomeActivity.class);
+        Intent intent = new Intent(this, SplashActivity.class);
         intent.putExtra(APPAction.KEY_HOME_ACTION, APPAction.ACTION_RESTART_APP);
         startActivity(intent);
     }
