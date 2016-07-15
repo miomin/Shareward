@@ -15,6 +15,7 @@ import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.home.HomePagerActivity;
 import scu.miomin.com.shareward.sample.activity.SampleTabActivity;
+import scu.miomin.com.shareward.sample.network.SampleNetworkActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleChatActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleRecyclerViewActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleSectionRvActivity;
@@ -74,6 +75,9 @@ public class ShareIndexActivity extends ToolbarActivity {
                     case 4:
                         startActivity(new Intent(ShareIndexActivity.this, SampleSectionRvActivity.class));
                         break;
+                    case 5:
+                        startActivity(new Intent(ShareIndexActivity.this, SampleNetworkActivity.class));
+                        break;
                 }
             }
 
@@ -93,5 +97,6 @@ public class ShareIndexActivity extends ToolbarActivity {
         mDatas.add("Chat");
         mDatas.add("RecyclerView");
         mDatas.add("SectionRecyclerView");
+        mDatas.add("NewWorkSample");
     }
 }
