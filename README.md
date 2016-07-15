@@ -5,13 +5,13 @@ Android快速开发框架
 
 # 简介
 
-## 1、解决APP被强杀造成再启动NPE
+## 1、APP强杀后的正确启动方式
 
-## 2、支持APP前后台判断
+## 2、APP前后台判断
 
-## 3、ToolbarActivity
+## 3、封装Toolbar
 
-## 4、底部Tab栏
+## 4、封装底部Tab栏
 
 ## 5、RecyclerView通用Adapter、ViewHolder
 
@@ -19,4 +19,6 @@ Android快速开发框架
 
 ## 7、接入LeakCanary
 
-## 8、接入UIL、Volley、FastJson
+## 8、接入Fresco
+
+## 9、Volley、Gson再封装，支持Json预解析，Request生命周期绑定
