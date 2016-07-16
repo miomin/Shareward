@@ -6,4 +6,5 @@ package scu.miomin.com.shareward.constants;
 public class APPString {
     public static final String PACKAGE_NAME = "scu.miomin.com.shareward";
     public static final String apiDomainName = "http://www.mocky.io";
+    public static final String TAG = "Shareward";
 }

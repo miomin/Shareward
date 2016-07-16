@@ -3,6 +3,7 @@
     package="scu.miomin.com.shareward">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".core.ShareApplication"
@@ -120,6 +121,14 @@
 
         <activity
             android:name=".sample.photoview.SampleViewPagerPhotoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".sample.index.ShareIndexActivity" />
+        </activity>
+
+        <activity
+            android:name=".db.SampleDBActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

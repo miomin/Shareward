@@ -42,4 +42,7 @@ dependencies {
     compile 'com.google.code.gson:gson:2.4'
     compile 'com.squareup.okhttp:okhttp:2.5.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
+
+    compile 'com.orhanobut:logger:1.15'
+    compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
 }

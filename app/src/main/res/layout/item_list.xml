@@ -10,8 +10,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@color/transparent"
-        android:layout_gravity="center"
-        fresco:placeholderImage="@drawable/default_img" />
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/id_item_list_title"

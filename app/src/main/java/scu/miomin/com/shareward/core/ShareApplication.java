@@ -9,6 +9,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.orhanobut.logger.Logger;
 import com.scu.miomin.sharewardlib.constants.APPAction;
 import com.scu.miomin.sharewardlib.core.AppController;
 import com.scu.miomin.sharewardlib.core.AppStatusTracker;
@@ -16,6 +17,7 @@ import com.scu.miomin.sharewardlib.http.okhttp.OkHttpStack;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.okhttp.OkHttpClient;
 
+import scu.miomin.com.shareward.constants.APPString;
 import scu.miomin.com.shareward.splash.SplashActivity;
 
 
@@ -38,6 +40,7 @@ public class ShareApplication extends Application {
         Fresco.initialize(this);
         LeakCanary.install(this);
         registerAppController();
+        Logger.init(APPString.TAG).methodCount(2);
     }
 
     private void registerAppController() {
