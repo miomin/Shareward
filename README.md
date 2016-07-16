@@ -32,3 +32,4 @@ Android快速开发框架
  - PhotoDraweeView : https://github.com/ongakuer/PhotoDraweeView
  - AndroidFine : https://github.com/tianshaojie/AndroidFine
  - OkHttpVolleyGson : https://github.com/Sottti/OkHttpVolleyGson
+ - MagicaSakura : https://github.com/Bilibili/MagicaSakura
