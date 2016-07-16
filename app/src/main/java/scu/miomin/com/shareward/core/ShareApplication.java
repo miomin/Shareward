@@ -2,16 +2,22 @@ package scu.miomin.com.shareward.core;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.scu.miomin.sharewardlib.constants.APPAction;
+import com.scu.miomin.sharewardlib.core.AppController;
+import com.scu.miomin.sharewardlib.core.AppStatusTracker;
+import com.scu.miomin.sharewardlib.http.okhttp.OkHttpStack;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.okhttp.OkHttpClient;
 
-import scu.miomin.com.shareward.http.okhttp.OkHttpStack;
+import scu.miomin.com.shareward.splash.SplashActivity;
+
 
 /**
  * Created by 莫绪旻 and Stay on 2/2/16.
@@ -31,6 +37,21 @@ public class ShareApplication extends Application {
         sInstance = this;
         Fresco.initialize(this);
         LeakCanary.install(this);
+        registerAppController();
+    }
+
+    private void registerAppController() {
+        AppStatusTracker.getInstance(this).registerAppController(new AppController() {
+            /**
+             * 如果App被kill掉了，应该回到welcomeActivity（singtask），重新进入APP正常的启动流程
+             */
+            @Override
+            public void protectApp(Context context) {
+                Intent intent = new Intent(context, SplashActivity.class);
+                intent.putExtra(APPAction.KEY_HOME_ACTION, APPAction.ACTION_RESTART_APP);
+                startActivity(intent);
+            }
+        });
     }
 
     public static Context getContext() {

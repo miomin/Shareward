@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:visibility="gone" />
 
-    <scu.miomin.com.shareward.view.CirclePageIndicator
+    <com.scu.miomin.sharewardlib.view.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

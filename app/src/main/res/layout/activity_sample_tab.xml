@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <scu.miomin.com.shareward.widgets.tab.ShareTabLayout
+    <com.scu.miomin.sharewardlib.widgets.tab.ShareTabLayout
         android:id="@+id/mTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -4,10 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.scu.miomin.sharewardlib.constants.APPAction;
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.constants.APPAction;
-import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
 
 
 /**

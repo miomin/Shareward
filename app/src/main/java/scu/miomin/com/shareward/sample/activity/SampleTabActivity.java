@@ -2,15 +2,16 @@ package scu.miomin.com.shareward.sample.activity;
 
 import android.os.Bundle;
 
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.core.BaseFragment;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+import com.scu.miomin.sharewardlib.widgets.tab.ShareTabLayout;
+import com.scu.miomin.sharewardlib.widgets.tab.ShareTabView;
+
 import java.util.ArrayList;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.core.BaseFragment;
 import scu.miomin.com.shareward.sample.fragment.SampleFragment;
-import scu.miomin.com.shareward.widgets.tab.ShareTabLayout;
-import scu.miomin.com.shareward.widgets.tab.ShareTabView;
 
 public class SampleTabActivity extends ToolbarActivity implements ShareTabLayout.OnTabClickListener {
 

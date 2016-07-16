@@ -9,17 +9,17 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareCommonAdapter;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareDividerItemDecoration;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.holder.ShareViewHolder;
+import com.scu.miomin.sharewardlib.widgets.swiperefresh.core.ShareSwipeRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareCommonAdapter;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareDividerItemDecoration;
-import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
-import scu.miomin.com.shareward.widgets.swiperefresh.core.ShareSwipeRefreshLayout;
 
 /**
  * Created by 莫绪旻 on 16/6/24.

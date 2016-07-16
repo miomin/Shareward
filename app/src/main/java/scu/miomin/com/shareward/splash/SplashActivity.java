@@ -3,30 +3,33 @@ package scu.miomin.com.shareward.splash;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.scu.miomin.sharewardlib.constants.APPStatu;
+import com.scu.miomin.sharewardlib.core.AppStatusTracker;
+import com.scu.miomin.sharewardlib.core.BaseActivity;
+import com.scu.miomin.sharewardlib.view.CirclePageIndicator;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.constants.APPString;
-import scu.miomin.com.shareward.core.AppStatusTracker;
 import scu.miomin.com.shareward.util.SharedPreferenceUtil;
 import scu.miomin.com.shareward.util.UIHelper;
-import scu.miomin.com.shareward.view.CirclePageIndicator;
 
 /**
  * Created by 莫绪旻 on 15/7/29.
  */
-public class SplashActivity extends FragmentActivity {
+public class SplashActivity extends BaseActivity {
 
     private Button btnHome;
     private CirclePageIndicator indicator;
@@ -45,9 +48,22 @@ public class SplashActivity extends FragmentActivity {
         // 将APP状态置为已正常启动
         AppStatusTracker.getInstance(getApplication()).setAppStatus(APPStatu.STATUS_ONLINE);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+    }
 
+    @Override
+    protected void getContentView() {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_splash);
+    }
+
+    @Override
+    protected void setUpView() {
         guideImage = (SimpleDraweeView) findViewById(R.id.guideImage);
+    }
+
+    @Override
+    protected void setUpData(Bundle savedInstanceState) {
         Uri uri = Uri.parse("res://" + APPString.PACKAGE_NAME + "/" + R.drawable.welcome);
         guideImage.setImageURI(uri);
 
@@ -60,8 +76,10 @@ public class SplashActivity extends FragmentActivity {
                     fadeOut.setFillAfter(true);
                     findViewById(R.id.guideImage).startAnimation(fadeOut);
                     initGuideGallery();
+                    Log.i("miomin","first");
                 } else {
                     UIHelper.showHome(SplashActivity.this);
+                    Log.i("miomin","first");
                 }
             }
         }, 2000);

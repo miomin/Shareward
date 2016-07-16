@@ -7,22 +7,23 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareCommonAdapter;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareDividerItemDecoration;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareOnItemClickListener;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.holder.ShareViewHolder;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.home.HomePagerActivity;
 import scu.miomin.com.shareward.sample.activity.SampleTabActivity;
 import scu.miomin.com.shareward.sample.network.SampleNetworkActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleChatActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleRecyclerViewActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleSectionRvActivity;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareCommonAdapter;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareDividerItemDecoration;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareOnItemClickListener;
-import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 
 /**
  * Created by 莫绪旻 on 16/6/24.

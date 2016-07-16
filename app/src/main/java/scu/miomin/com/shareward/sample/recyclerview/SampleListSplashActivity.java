@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
 
 /**
  * Created by 莫绪旻 on 16/6/24.

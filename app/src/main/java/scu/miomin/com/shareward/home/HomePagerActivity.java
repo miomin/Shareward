@@ -7,9 +7,10 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.ViewGroup;
 
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.sample.fragment.SampleBundleFragment;
 
 

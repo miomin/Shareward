@@ -14,8 +14,7 @@
 
         <activity
             android:name=".splash.SplashActivity"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            android:theme="@style/AppTheme.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +28,6 @@
 
         <activity
             android:name=".home.HomeActivity"
-            android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -38,7 +36,6 @@
 
         <activity
             android:name=".home.HomePagerActivity"
-            android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

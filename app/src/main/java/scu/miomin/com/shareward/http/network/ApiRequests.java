@@ -8,6 +8,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
+import com.scu.miomin.sharewardlib.http.network.GsonGetRequest;
+import com.scu.miomin.sharewardlib.http.network.GsonPostRequest;
 
 import java.util.ArrayList;
 

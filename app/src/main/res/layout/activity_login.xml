@@ -13,45 +13,22 @@
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <scu.miomin.com.shareward.view.MaterialTextField
-            android:layout_width="300dp"
+
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginTop="20dp"
-            app:mtf_image="@drawable/ic_mail_grey600_24dp">
+            android:hint="Email"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:textSize="14sp" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:textColor="#333"
-                android:textColorHint="#666"
-                android:textSize="14sp" />
-
-        </scu.miomin.com.shareward.view.MaterialTextField>
-
-        <scu.miomin.com.shareward.view.MaterialTextField
-            android:layout_width="300dp"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginTop="16dp"
-            app:mtf_image="@drawable/ic_mail_grey600_24dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:textColor="#333"
-                android:textColorHint="#666"
-                android:textSize="14sp" />
-
-        </scu.miomin.com.shareward.view.MaterialTextField>
+            android:hint="Password"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

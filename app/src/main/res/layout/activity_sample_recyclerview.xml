@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <scu.miomin.com.shareward.widgets.swiperefresh.core.ShareSwipeRefreshLayout
+    <com.scu.miomin.sharewardlib.widgets.swiperefresh.core.ShareSwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         app:refresh_view_bg_color="@color/transparent"
         app:refresh_text_color="@color/colorPrimary"
@@ -18,6 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </scu.miomin.com.shareward.widgets.swiperefresh.core.ShareSwipeRefreshLayout>
+    </com.scu.miomin.sharewardlib.widgets.swiperefresh.core.ShareSwipeRefreshLayout>
 
 </FrameLayout>

@@ -7,17 +7,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareDividerItemDecoration;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareOnItemClickListener;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.holder.ShareViewHolder;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.support.ShareSectionAdapter;
+import com.scu.miomin.sharewardlib.widgets.recyclerview.support.ShareSectionSupport;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareDividerItemDecoration;
-import scu.miomin.com.shareward.widgets.recyclerview.ShareOnItemClickListener;
-import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
-import scu.miomin.com.shareward.widgets.recyclerview.support.ShareSectionAdapter;
-import scu.miomin.com.shareward.widgets.recyclerview.support.ShareSectionSupport;
 
 /**
  * Created by 莫绪旻 on 16/6/24.

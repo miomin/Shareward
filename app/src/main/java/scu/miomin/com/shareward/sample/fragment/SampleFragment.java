@@ -6,8 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.scu.miomin.sharewardlib.core.BaseFragment;
+
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.core.BaseFragment;
 
 /**
  * Created by 莫绪旻 on 16/2/29.

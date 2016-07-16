@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import scu.miomin.com.shareward.sample.activity.LoginActivity;
 import scu.miomin.com.shareward.sample.index.ShareIndexActivity;
 
 /**
@@ -41,11 +40,6 @@ public class UIHelper {
 
     public static void showHome(Activity context){
         Intent intent = new Intent(context, ShareIndexActivity.class);
-        context.startActivity(intent);
-    }
-
-    public static void showLogin(Activity context){
-        Intent intent = new Intent(context, LoginActivity.class);
         context.startActivity(intent);
     }
 }

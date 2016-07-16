@@ -10,13 +10,13 @@ import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.scu.miomin.sharewardlib.constants.ActivityType;
+import com.scu.miomin.sharewardlib.http.network.GsonGetRequest;
+import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.base.toolbar.ToolbarActivity;
-import scu.miomin.com.shareward.constants.ActivityType;
 import scu.miomin.com.shareward.core.ShareApplication;
 import scu.miomin.com.shareward.http.network.ApiRequests;
-import scu.miomin.com.shareward.http.network.GsonGetRequest;
 import scu.miomin.com.shareward.sample.dataModel.DummyObject;
 
 /**
