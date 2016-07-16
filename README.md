@@ -23,6 +23,7 @@ Android快速开发框架
 
 ### 9、Volley、Gson再封装，支持Json预解析，Request生命周期绑定
 
+### 10、支持单张大图和多张大图查看
 
 -------------------
 
@@ -31,4 +32,3 @@ Android快速开发框架
  - PhotoDraweeView : https://github.com/ongakuer/PhotoDraweeView
  - AndroidFine : https://github.com/tianshaojie/AndroidFine
  - OkHttpVolleyGson : https://github.com/Sottti/OkHttpVolleyGson
- - PhotoDraweeView : https://github.com/ongakuer/PhotoDraweeView
