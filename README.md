@@ -37,3 +37,5 @@ Android快速开发框架
  - AndroidFine : https://github.com/tianshaojie/AndroidFine
  - OkHttpVolleyGson : https://github.com/Sottti/OkHttpVolleyGson
  - MagicaSakura : https://github.com/Bilibili/MagicaSakura
+ - android-sqlite-asset-helper : https://github.com/jgilfelt/android-sqlite-asset-helper
+ - logger : https://github.com/orhanobut/logger
