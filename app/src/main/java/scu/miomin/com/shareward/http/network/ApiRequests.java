@@ -18,7 +18,7 @@ import scu.miomin.com.shareward.sample.dataModel.DummyObject;
 import scu.miomin.com.shareward.sample.dataModel.DummyObjectDeserializer;
 
 /**
- * Api requests
+ * Created by 莫绪旻 on 16/7/15.
  */
 public class ApiRequests {
     private static final Gson gson = new GsonBuilder()

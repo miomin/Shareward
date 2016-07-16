@@ -11,7 +11,7 @@ import com.scu.miomin.sharewardlib.R;
 import com.scu.miomin.sharewardlib.core.BaseFragment;
 
 /**
- * Created by miomin on 16/4/25.
+ * Created by 莫绪旻 on 16/4/25.
  */
 public class ShareTabView extends LinearLayout {
 

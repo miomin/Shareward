@@ -8,7 +8,7 @@ import android.widget.Toast;
 import scu.miomin.com.shareward.sample.index.ShareIndexActivity;
 
 /**
- * 应用程序UI工具包：封装UI相关的一些操作
+ * Created by 莫绪旻 on 16/7/15.
  */
 public class UIHelper {
 

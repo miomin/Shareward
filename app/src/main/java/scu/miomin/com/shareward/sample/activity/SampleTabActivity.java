@@ -13,6 +13,9 @@ import java.util.ArrayList;
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.sample.fragment.SampleFragment;
 
+/**
+ * Created by 莫绪旻 on 16/7/15.
+ */
 public class SampleTabActivity extends ToolbarActivity implements ShareTabLayout.OnTabClickListener {
 
     private ShareTabLayout mTabLayout;

@@ -21,6 +21,8 @@ import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.home.HomePagerActivity;
 import scu.miomin.com.shareward.sample.activity.SampleTabActivity;
 import scu.miomin.com.shareward.sample.network.SampleNetworkActivity;
+import scu.miomin.com.shareward.sample.photoview.SampleSinglePhotoActivity;
+import scu.miomin.com.shareward.sample.photoview.SampleViewPagerPhotoActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleChatActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleRecyclerViewActivity;
 import scu.miomin.com.shareward.sample.recyclerview.SampleSectionRvActivity;
@@ -79,6 +81,12 @@ public class ShareIndexActivity extends ToolbarActivity {
                     case 5:
                         startActivity(new Intent(ShareIndexActivity.this, SampleNetworkActivity.class));
                         break;
+                    case 6:
+                        startActivity(new Intent(ShareIndexActivity.this, SampleSinglePhotoActivity.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(ShareIndexActivity.this, SampleViewPagerPhotoActivity.class));
+                        break;
                 }
             }
 
@@ -99,5 +107,7 @@ public class ShareIndexActivity extends ToolbarActivity {
         mDatas.add("RecyclerView");
         mDatas.add("SectionRecyclerView");
         mDatas.add("NewWorkSample");
+        mDatas.add("SinglePhotoView");
+        mDatas.add("PagerPhotoView");
     }
 }

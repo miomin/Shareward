@@ -13,7 +13,6 @@ import java.util.List;
 
 
 /**
- * 记录APP状态
  * Created by 莫绪旻 and Stay on 4/2/2016.
  */
 public class AppStatusTracker implements Application.ActivityLifecycleCallbacks {

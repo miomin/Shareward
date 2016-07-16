@@ -110,6 +110,22 @@
                 android:value=".sample.index.ShareIndexActivity" />
         </activity>
 
+        <activity
+            android:name=".sample.photoview.SampleSinglePhotoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".sample.index.ShareIndexActivity" />
+        </activity>
+
+        <activity
+            android:name=".sample.photoview.SampleViewPagerPhotoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".sample.index.ShareIndexActivity" />
+        </activity>
+
     </application>
 
 </manifest>

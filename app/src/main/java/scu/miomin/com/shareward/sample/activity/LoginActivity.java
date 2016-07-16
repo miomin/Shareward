@@ -13,7 +13,7 @@ import scu.miomin.com.shareward.sample.recyclerview.SampleListSplashActivity;
 
 
 /**
- * Created by Miomin and Stay on 2/2/16.
+ * Created by 莫绪旻 on 2/2/16.
  */
 public class LoginActivity extends ToolbarActivity implements View.OnClickListener {
 

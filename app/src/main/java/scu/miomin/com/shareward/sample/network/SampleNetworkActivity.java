@@ -10,7 +10,6 @@ import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 
 import scu.miomin.com.shareward.R;
 
-
 /**
  * Launches the different samples
  */

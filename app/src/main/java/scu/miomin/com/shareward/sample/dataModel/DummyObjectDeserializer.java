@@ -10,7 +10,7 @@ import java.lang.reflect.Type;
 
 /**
  * Deserializer for a dummy object
- * <p>
+ * <p/>
  * Convert a JsonObject into a Dummy object.
  */
 public class DummyObjectDeserializer implements JsonDeserializer<DummyObject> {

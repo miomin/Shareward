@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by miomin on 16/4/25.
+ * Created by 莫绪旻 on 16/4/25.
  */
 public class ShareTabLayout extends LinearLayout implements View.OnClickListener {
 

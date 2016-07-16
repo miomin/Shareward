@@ -5,7 +5,9 @@ import android.content.SharedPreferences.Editor;
 
 import scu.miomin.com.shareward.core.ShareApplication;
 
-
+/**
+ * Created by 莫绪旻 on 16/7/15.
+ */
 public class SharedPreferenceUtil {
 
     private static final String SP_NAME = "souyue";
