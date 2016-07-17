@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.scu.miomin.sharewardlib.constants.ActivityType;
@@ -62,29 +63,41 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
         LayoutInflater inflater = LayoutInflater.from(getApplicationContext());
         final View view = inflater.inflate(R.layout.refresh_view, null);
         final TextView textView = (TextView) view.findViewById(R.id.title);
-        swipeRefreshLayout.setHeaderView(view);
+        swipeRefreshLayout.setFooterView(view);
         swipeRefreshLayout.setOnRefreshListener(new ShareSwipeRefreshLayout.WXOnRefreshListener() {
             @Override
             public void onRefresh() {
-
+                swipeRefreshLayout.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.finishRefresh();
+                        Toast.makeText(SampleRecyclerViewActivity.this,"刷新完成",Toast.LENGTH_SHORT).show();
+                    }
+                },1600);
             }
 
             @Override
             public void onLoading() {
-
+                swipeRefreshLayout.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.finishLoadmore();
+                        Toast.makeText(SampleRecyclerViewActivity.this,"加载完成",Toast.LENGTH_SHORT).show();
+                    }
+                },1600);
             }
 
             @Override
             public void onRefreshPulStateChange(float percent, int state) {
                 switch (state) {
                     case ShareSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
-                        textView.setText("下拉刷新");
+                        swipeRefreshLayout.setLoaderViewText("下拉刷新");
                         break;
                     case ShareSwipeRefreshLayout.OVER_TRIGGER_POINT:
-                        textView.setText("松开刷新");
+                        swipeRefreshLayout.setLoaderViewText("松开刷新");
                         break;
                     case ShareSwipeRefreshLayout.START:
-                        textView.setText("正在刷新");
+                        swipeRefreshLayout.setLoaderViewText("正在刷新");
                         break;
                 }
             }
@@ -93,13 +106,13 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
             public void onLoadmorePullStateChange(float percent, int state) {
                 switch (state) {
                     case ShareSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
-                        swipeRefreshLayout.setLoaderViewText("上拉加载");
+                        textView.setText("上拉加载");
                         break;
                     case ShareSwipeRefreshLayout.OVER_TRIGGER_POINT:
-                        swipeRefreshLayout.setLoaderViewText("松开加载");
+                        textView.setText("松开加载");
                         break;
                     case ShareSwipeRefreshLayout.START:
-                        swipeRefreshLayout.setLoaderViewText("正在加载");
+                        textView.setText("正在加载...");
                         break;
                 }
             }
