@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.recyclerview;
+package scu.miomin.com.shareward.activity.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,8 +12,8 @@ import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareOnItemClickListener;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.sample.recyclerview.adapter.ChatAdapter;
-import scu.miomin.com.shareward.sample.recyclerview.bean.ChatMessage;
+import scu.miomin.com.shareward.activity.recyclerview.adapter.ChatAdapter;
+import scu.miomin.com.shareward.activity.recyclerview.bean.ChatMessage;
 
 /**
  * Created by 莫绪旻 on 16/6/24.

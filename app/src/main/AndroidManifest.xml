@@ -24,107 +24,107 @@
         </activity>
 
         <activity
-            android:name=".sample.activity.LoginActivity"
+            android:name=".activity.home.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".home.HomeActivity"
+            android:name=".activity.home.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".home.HomePagerActivity"
+            android:name=".activity.home.HomePagerActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.activity.SampleTabActivity"
+            android:name=".activity.home.SampleTabActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.recyclerview.SampleListSplashActivity"
+            android:name=".activity.recyclerview.SampleListSplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.recyclerview.SampleChatActivity"
+            android:name=".activity.recyclerview.SampleChatActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.recyclerview.SampleRecyclerViewActivity"
+            android:name=".activity.recyclerview.SampleRecyclerViewActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.recyclerview.SampleSectionRvActivity"
+            android:name=".activity.recyclerview.SampleSectionRvActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.index.ShareIndexActivity"
+            android:name=".activity.index.ShareIndexActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".sample.network.SampleNetworkActivity"
+            android:name=".activity.network.SampleNetworkActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.network.SampleJSONArrayActivity"
+            android:name=".activity.network.SampleJSONArrayActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.network.SampleJSONObjectActivity"
+            android:name=".activity.network.SampleJSONObjectActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.photoview.SampleSinglePhotoActivity"
+            android:name=".activity.photoview.SampleSinglePhotoActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
-            android:name=".sample.photoview.SampleViewPagerPhotoActivity"
+            android:name=".activity.photoview.SampleViewPagerPhotoActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
         <activity
@@ -132,7 +132,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".sample.index.ShareIndexActivity" />
+                android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
     </application>

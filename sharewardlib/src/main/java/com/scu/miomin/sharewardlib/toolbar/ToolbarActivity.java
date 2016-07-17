@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.scu.miomin.sharewardlib.R;
 import com.scu.miomin.sharewardlib.constants.ActivityType;
 import com.scu.miomin.sharewardlib.core.BaseActivity;
-import com.scu.miomin.sharewardlib.log.MyLogger;
 
 
 /**
@@ -91,12 +90,10 @@ public abstract class ToolbarActivity extends BaseActivity {
     public void setUpTitle(String title) {
 
         if (toolbar == null || toolbar_title == null) {
-            MyLogger.Log_dev1(getApplicationContext()).i("notitle");
             return;
         }
 
         toolbar.setTitle("");
-        MyLogger.Log_dev1(getApplicationContext()).i("setuptitle");
         toolbar_title.setText(title);
     }
 

@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.dataModel;
+package scu.miomin.com.shareward.activity.dataModel;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

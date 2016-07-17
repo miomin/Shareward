@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.recyclerview.bean;
+package scu.miomin.com.shareward.activity.recyclerview.bean;
 
 import java.util.ArrayList;
 import java.util.List;

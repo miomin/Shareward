@@ -14,8 +14,8 @@ import com.scu.miomin.sharewardlib.http.network.GsonPostRequest;
 import java.util.ArrayList;
 
 import scu.miomin.com.shareward.constants.APPString;
-import scu.miomin.com.shareward.sample.dataModel.DummyObject;
-import scu.miomin.com.shareward.sample.dataModel.DummyObjectDeserializer;
+import scu.miomin.com.shareward.activity.dataModel.DummyObject;
+import scu.miomin.com.shareward.activity.dataModel.DummyObjectDeserializer;
 
 /**
  * Created by 莫绪旻 on 16/7/15.

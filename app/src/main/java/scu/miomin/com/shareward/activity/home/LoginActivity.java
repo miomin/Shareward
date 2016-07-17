@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.activity;
+package scu.miomin.com.shareward.activity.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import com.scu.miomin.sharewardlib.constants.ActivityType;
 import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.sample.recyclerview.SampleListSplashActivity;
+import scu.miomin.com.shareward.activity.recyclerview.SampleListSplashActivity;
 
 
 /**

@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.activity;
+package scu.miomin.com.shareward.activity.home;
 
 import android.os.Bundle;
 
@@ -11,7 +11,7 @@ import com.scu.miomin.sharewardlib.widgets.tab.ShareTabView;
 import java.util.ArrayList;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.sample.fragment.SampleFragment;
+import scu.miomin.com.shareward.activity.fragment.SampleFragment;
 
 /**
  * Created by 莫绪旻 on 16/7/15.

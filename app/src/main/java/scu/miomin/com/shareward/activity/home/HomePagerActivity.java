@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.home;
+package scu.miomin.com.shareward.activity.home;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +11,7 @@ import com.scu.miomin.sharewardlib.constants.ActivityType;
 import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.sample.fragment.SampleBundleFragment;
+import scu.miomin.com.shareward.activity.fragment.SampleBundleFragment;
 
 
 /**

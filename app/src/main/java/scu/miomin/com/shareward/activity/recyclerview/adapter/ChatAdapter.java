@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.recyclerview.adapter;
+package scu.miomin.com.shareward.activity.recyclerview.adapter;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import com.scu.miomin.sharewardlib.widgets.recyclerview.holder.ShareViewHolder;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.sample.recyclerview.bean.ChatMessage;
+import scu.miomin.com.shareward.activity.recyclerview.bean.ChatMessage;
 
 
 /**

@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.network;
+package scu.miomin.com.shareward.activity.network;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,30 +14,27 @@ import com.scu.miomin.sharewardlib.constants.ActivityType;
 import com.scu.miomin.sharewardlib.http.network.GsonGetRequest;
 import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 
+import java.util.ArrayList;
+
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.core.ShareApplication;
 import scu.miomin.com.shareward.http.network.ApiRequests;
-import scu.miomin.com.shareward.sample.dataModel.DummyObject;
+import scu.miomin.com.shareward.activity.dataModel.DummyObject;
 
 /**
  * Demonstrates how to make a JSON Object request
  */
-public class SampleJSONObjectActivity extends ToolbarActivity {
+public class SampleJSONArrayActivity extends ToolbarActivity {
 
-    private static final String TAG = "SampleJSONObjectActivity";
+    private static final String TAG = "SampleJSONArrayActivity";
 
-    private TextView mTitle, mBody;
     private ProgressBar mProgressBar;
     private LinearLayout mContent, mErrorView;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    private TextView mTitle, mBody, mSecondTitle, mSecondBody;
 
     @Override
     protected void getContentView() {
-        setContentView(R.layout.activity_json_object_request, ActivityType.MODE_TOOLBAR_BACK);
+        setContentView(R.layout.activity_json_array_request, ActivityType.MODE_TOOLBAR_BACK);
     }
 
     @Override
@@ -46,6 +43,10 @@ public class SampleJSONObjectActivity extends ToolbarActivity {
         mTitle = (TextView) findViewById(R.id.my_title);
         mBody = (TextView) findViewById(R.id.my_body);
         mBody.setMovementMethod(new ScrollingMovementMethod());
+        mBody.setMovementMethod(new ScrollingMovementMethod());
+        mSecondTitle = (TextView) findViewById(R.id.my_title_2);
+        mSecondBody = (TextView) findViewById(R.id.my_body_2);
+        mSecondBody.setMovementMethod(new ScrollingMovementMethod());
         mErrorView = (LinearLayout) findViewById(R.id.error_view);
         mContent = (LinearLayout) findViewById(R.id.content);
     }
@@ -56,16 +57,16 @@ public class SampleJSONObjectActivity extends ToolbarActivity {
     }
 
     private void sendHttp() {
-        final GsonGetRequest<DummyObject> gsonGetRequest =
-                ApiRequests.getDummyObject
+        final GsonGetRequest<ArrayList<DummyObject>> gsonGetRequest =
+                ApiRequests.getDummyObjectArray
                         (
-                                new Response.Listener<DummyObject>() {
+                                new Response.Listener<ArrayList<DummyObject>>() {
                                     @Override
-                                    public void onResponse(DummyObject dummyObject) {
+                                    public void onResponse(ArrayList<DummyObject> dummyObjectArrayList) {
                                         // Deal with the DummyObject here
                                         mProgressBar.setVisibility(View.GONE);
                                         mContent.setVisibility(View.VISIBLE);
-                                        setResultData(dummyObject);
+                                        setResultData(dummyObjectArrayList);
                                     }
                                 }
                                 ,
@@ -82,6 +83,7 @@ public class SampleJSONObjectActivity extends ToolbarActivity {
         ShareApplication.addRequest(gsonGetRequest, TAG);
     }
 
+
     @Override
     protected void onStop() {
         ShareApplication.cancelAllRequests(TAG);
@@ -91,10 +93,12 @@ public class SampleJSONObjectActivity extends ToolbarActivity {
     /**
      * Sets the data in the UI
      *
-     * @param dummyObject is the object to get the data from
+     * @param dummyObjectArrayList is the object's array to get the data from
      */
-    private void setResultData(@NonNull final DummyObject dummyObject) {
-        mTitle.setText(dummyObject.getTitle());
-        mBody.setText(dummyObject.getBody());
+    private void setResultData(@NonNull final ArrayList<DummyObject> dummyObjectArrayList) {
+        mTitle.setText(dummyObjectArrayList.get(0).getTitle());
+        mBody.setText(dummyObjectArrayList.get(0).getBody());
+        mSecondTitle.setText(dummyObjectArrayList.get(1).getTitle());
+        mSecondBody.setText(dummyObjectArrayList.get(1).getBody());
     }
 }

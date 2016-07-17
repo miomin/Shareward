@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.home;
+package scu.miomin.com.shareward.activity.home;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.network;
+package scu.miomin.com.shareward.activity.network;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import scu.miomin.com.shareward.sample.index.ShareIndexActivity;
+import scu.miomin.com.shareward.activity.index.ShareIndexActivity;
 
 /**
  * Created by 莫绪旻 on 16/7/15.

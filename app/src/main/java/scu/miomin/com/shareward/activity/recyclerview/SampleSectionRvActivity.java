@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.recyclerview;
+package scu.miomin.com.shareward.activity.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;

@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.index;
+package scu.miomin.com.shareward.activity.index;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,14 +19,14 @@ import java.util.List;
 
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.db.SampleDBActivity;
-import scu.miomin.com.shareward.home.HomePagerActivity;
-import scu.miomin.com.shareward.sample.activity.SampleTabActivity;
-import scu.miomin.com.shareward.sample.network.SampleNetworkActivity;
-import scu.miomin.com.shareward.sample.photoview.SampleSinglePhotoActivity;
-import scu.miomin.com.shareward.sample.photoview.SampleViewPagerPhotoActivity;
-import scu.miomin.com.shareward.sample.recyclerview.SampleChatActivity;
-import scu.miomin.com.shareward.sample.recyclerview.SampleRecyclerViewActivity;
-import scu.miomin.com.shareward.sample.recyclerview.SampleSectionRvActivity;
+import scu.miomin.com.shareward.activity.home.HomePagerActivity;
+import scu.miomin.com.shareward.activity.home.SampleTabActivity;
+import scu.miomin.com.shareward.activity.network.SampleNetworkActivity;
+import scu.miomin.com.shareward.activity.photoview.SampleSinglePhotoActivity;
+import scu.miomin.com.shareward.activity.photoview.SampleViewPagerPhotoActivity;
+import scu.miomin.com.shareward.activity.recyclerview.SampleChatActivity;
+import scu.miomin.com.shareward.activity.recyclerview.SampleRecyclerViewActivity;
+import scu.miomin.com.shareward.activity.recyclerview.SampleSectionRvActivity;
 
 /**
  * Created by 莫绪旻 on 16/6/24.

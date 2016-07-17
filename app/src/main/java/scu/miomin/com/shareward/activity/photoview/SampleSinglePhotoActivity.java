@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.photoview;
+package scu.miomin.com.shareward.activity.photoview;
 
 import android.graphics.drawable.Animatable;
 import android.net.Uri;

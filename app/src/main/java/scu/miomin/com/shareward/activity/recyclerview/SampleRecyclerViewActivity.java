@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.sample.recyclerview;
+package scu.miomin.com.shareward.activity.recyclerview;
 
 import android.net.Uri;
 import android.os.Bundle;
