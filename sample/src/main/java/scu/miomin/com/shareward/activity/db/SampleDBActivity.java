@@ -1,4 +1,4 @@
-package scu.miomin.com.shareward.db;
+package scu.miomin.com.shareward.activity.db;
 
 import android.app.ListActivity;
 import android.database.Cursor;
