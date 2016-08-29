@@ -128,7 +128,7 @@
         </activity>
 
         <activity
-            android:name=".db.SampleDBActivity"
+            android:name=".activity.db.SampleDBActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
