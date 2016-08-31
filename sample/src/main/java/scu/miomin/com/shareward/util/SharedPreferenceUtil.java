@@ -35,7 +35,7 @@ public class SharedPreferenceUtil {
     }
 
     private android.content.SharedPreferences getSp() {
-        return ShareApplication.getContext().getSharedPreferences(SP_NAME, Context.MODE_PRIVATE);
+        return ShareApplication.getInstance().getSharedPreferences(SP_NAME, Context.MODE_PRIVATE);
     }
 
     public int getInt(String key, int def) {

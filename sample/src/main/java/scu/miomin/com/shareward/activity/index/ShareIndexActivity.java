@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
-import scu.miomin.com.shareward.db.SampleDBActivity;
+import scu.miomin.com.shareward.activity.db.SampleDBActivity;
 import scu.miomin.com.shareward.activity.home.HomePagerActivity;
 import scu.miomin.com.shareward.activity.home.SampleTabActivity;
 import scu.miomin.com.shareward.activity.network.SampleNetworkActivity;
