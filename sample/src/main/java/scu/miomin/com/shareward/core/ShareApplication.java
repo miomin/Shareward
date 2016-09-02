@@ -26,7 +26,6 @@ import scu.miomin.com.shareward.splash.SplashActivity;
  */
 public class ShareApplication extends Application {
 
-    private static Context context;
     private static ShareApplication sInstance;
 
     // Volley request queue
@@ -35,7 +34,6 @@ public class ShareApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        context = getApplicationContext();
         sInstance = this;
         Fresco.initialize(this);
         LeakCanary.install(this);
@@ -55,10 +53,6 @@ public class ShareApplication extends Application {
                 startActivity(intent);
             }
         });
-    }
-
-    public static Context getContext() {
-        return context;
     }
 
     public static ShareApplication getInstance() {
