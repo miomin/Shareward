@@ -135,6 +135,14 @@
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
 
+        <activity
+            android:name=".activity.BottomNavigation.SampleBottomNavigationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.index.ShareIndexActivity" />
+        </activity>
+
     </application>
 
 </manifest>
