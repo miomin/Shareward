@@ -15,7 +15,7 @@ import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareCommonAdapter;
 import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareDividerItemDecoration;
 import com.scu.miomin.sharewardlib.widgets.recyclerview.holder.ShareViewHolder;
-import com.scu.miomin.sharewardlib.widgets.swiperefresh.core.ShareSwipeRefreshLayout;
+import com.scu.miomin.shswiperefresh.core.SHSwipeRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ import scu.miomin.com.shareward.R;
 public class SampleRecyclerViewActivity extends ToolbarActivity {
 
     private RecyclerView mRecyclerView;
-    private ShareSwipeRefreshLayout swipeRefreshLayout;
+    private SHSwipeRefreshLayout swipeRefreshLayout;
     private List<String> mDatas = new ArrayList<>();
 
     @Override
@@ -38,7 +38,7 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
 
     @Override
     protected void setUpView() {
-        swipeRefreshLayout = (ShareSwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+        swipeRefreshLayout = (SHSwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addItemDecoration(new ShareDividerItemDecoration(this, ShareDividerItemDecoration.VERTICAL_LIST));
@@ -64,7 +64,7 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
         final View view = inflater.inflate(R.layout.refresh_view, null);
         final TextView textView = (TextView) view.findViewById(R.id.title);
         swipeRefreshLayout.setFooterView(view);
-        swipeRefreshLayout.setOnRefreshListener(new ShareSwipeRefreshLayout.WXOnRefreshListener() {
+        swipeRefreshLayout.setOnRefreshListener(new SHSwipeRefreshLayout.SHSOnRefreshListener() {
             @Override
             public void onRefresh() {
                 swipeRefreshLayout.postDelayed(new Runnable() {
@@ -90,13 +90,13 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
             @Override
             public void onRefreshPulStateChange(float percent, int state) {
                 switch (state) {
-                    case ShareSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
+                    case SHSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
                         swipeRefreshLayout.setLoaderViewText("下拉刷新");
                         break;
-                    case ShareSwipeRefreshLayout.OVER_TRIGGER_POINT:
+                    case SHSwipeRefreshLayout.OVER_TRIGGER_POINT:
                         swipeRefreshLayout.setLoaderViewText("松开刷新");
                         break;
-                    case ShareSwipeRefreshLayout.START:
+                    case SHSwipeRefreshLayout.START:
                         swipeRefreshLayout.setLoaderViewText("正在刷新");
                         break;
                 }
@@ -105,13 +105,13 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
             @Override
             public void onLoadmorePullStateChange(float percent, int state) {
                 switch (state) {
-                    case ShareSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
+                    case SHSwipeRefreshLayout.NOT_OVER_TRIGGER_POINT:
                         textView.setText("上拉加载");
                         break;
-                    case ShareSwipeRefreshLayout.OVER_TRIGGER_POINT:
+                    case SHSwipeRefreshLayout.OVER_TRIGGER_POINT:
                         textView.setText("松开加载");
                         break;
-                    case ShareSwipeRefreshLayout.START:
+                    case SHSwipeRefreshLayout.START:
                         textView.setText("正在加载...");
                         break;
                 }

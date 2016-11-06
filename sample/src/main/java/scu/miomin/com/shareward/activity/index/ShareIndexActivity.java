@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.activity.BottomNavigation.SampleBottomNavigationActivity;
 import scu.miomin.com.shareward.activity.db.SampleDBActivity;
 import scu.miomin.com.shareward.activity.home.HomePagerActivity;
 import scu.miomin.com.shareward.activity.home.SampleTabActivity;
@@ -91,6 +92,9 @@ public class ShareIndexActivity extends ToolbarActivity {
                     case 8:
                         startActivity(new Intent(ShareIndexActivity.this, SampleDBActivity.class));
                         break;
+                    case 9:
+                        startActivity(new Intent(ShareIndexActivity.this, SampleBottomNavigationActivity.class));
+                        break;
                 }
             }
 
@@ -114,5 +118,6 @@ public class ShareIndexActivity extends ToolbarActivity {
         mDatas.add("SinglePhotoView");
         mDatas.add("PagerPhotoView");
         mDatas.add("SQLiteHelper");
+        mDatas.add("BottomNavigation");
     }
 }
