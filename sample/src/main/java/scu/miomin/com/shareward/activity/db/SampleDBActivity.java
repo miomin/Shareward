@@ -33,5 +33,4 @@ public class SampleDBActivity extends ListActivity {
         employees.close();
         db.close();
     }
-
 }
