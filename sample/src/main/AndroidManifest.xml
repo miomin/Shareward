@@ -12,7 +12,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".splash.SplashActivity"
             android:theme="@style/AppTheme.FullScreen">
@@ -22,11 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activity.home.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".activity.home.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -34,7 +31,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.home.HomePagerActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -42,7 +38,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.home.SampleTabActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -50,7 +45,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.recyclerview.SampleListSplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -58,7 +52,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.recyclerview.SampleChatActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -66,7 +59,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.recyclerview.SampleRecyclerViewActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -74,7 +66,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.recyclerview.SampleSectionRvActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -82,11 +73,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.index.ShareIndexActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.network.SampleNetworkActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -94,7 +83,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.network.SampleJSONArrayActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -102,7 +90,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.network.SampleJSONObjectActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -110,7 +97,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.photoview.SampleSinglePhotoActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -118,7 +104,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.photoview.SampleViewPagerPhotoActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -126,7 +111,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.db.SampleDBActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -134,7 +118,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
         <activity
             android:name=".activity.BottomNavigation.SampleBottomNavigationActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -142,7 +125,34 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
-
+        <activity
+            android:name=".activity.rxjava.index.SampleRxJavaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.index.ShareIndexActivity" />
+        </activity>
+        <activity
+            android:name=".activity.rxjava.hellorx.HelloRxJavaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.rxjava.index.SampleRxJavaActivity" />
+        </activity>
+        <activity
+            android:name=".activity.rxjava.flatmap.FlatMapActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.rxjava.index.SampleRxJavaActivity" />
+        </activity>
+        <activity
+            android:name=".activity.rxjava.retrofit.activity.RetrofitActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.rxjava.index.SampleRxJavaActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.scu.miomin.sharewardlib.toolbar;
+package scu.miomin.com.shareward.toolbar;
 
 import android.os.Build;
 import android.support.annotation.LayoutRes;
@@ -7,9 +7,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import com.scu.miomin.sharewardlib.R;
-import com.scu.miomin.sharewardlib.constants.ActivityType;
-import com.scu.miomin.sharewardlib.core.BaseActivity;
+import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.constants.ActivityType;
+import scu.miomin.com.shareward.core.BaseActivity;
 
 
 /**
