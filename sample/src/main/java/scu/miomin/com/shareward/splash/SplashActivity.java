@@ -16,15 +16,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.scu.miomin.sharewardlib.constants.APPStatu;
-import com.scu.miomin.sharewardlib.core.AppStatusTracker;
-import com.scu.miomin.sharewardlib.core.BaseActivity;
-import com.scu.miomin.sharewardlib.view.CirclePageIndicator;
 
 import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.constants.APPStatu;
 import scu.miomin.com.shareward.constants.APPString;
+import scu.miomin.com.shareward.core.AppStatusTracker;
+import scu.miomin.com.shareward.core.BaseActivity;
 import scu.miomin.com.shareward.util.SharedPreferenceUtil;
 import scu.miomin.com.shareward.util.UIHelper;
+import scu.miomin.com.shareward.view.CirclePageIndicator;
 
 /**
  * Created by 莫绪旻 on 15/7/29.
