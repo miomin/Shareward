@@ -20,6 +20,12 @@ public class ProgressDialogHandler extends Handler {
     private boolean cancelable;
     private ProgressCancelListener mProgressCancelListener;
 
+    public ProgressDialogHandler(Context context, boolean cancelable) {
+        super();
+        this.context = context;
+        this.cancelable = cancelable;
+    }
+
     public ProgressDialogHandler(Context context, ProgressCancelListener mProgressCancelListener,
                                  boolean cancelable) {
         super();
@@ -28,9 +34,20 @@ public class ProgressDialogHandler extends Handler {
         this.cancelable = cancelable;
     }
 
-    private void initProgressDialog() {
+    public void setProgressCancleListener(ProgressCancelListener mProgressCancelListener) {
+        this.mProgressCancelListener = mProgressCancelListener;
+    }
+
+    private void initProgressDialog(PDMessage message) {
         if (pd == null) {
             pd = new ProgressDialog(context);
+
+            if (message != null) {
+                if (message.title != null)
+                    pd.setTitle(message.title);
+                if (message.message != null)
+                    pd.setMessage(message.message);
+            }
 
             pd.setCancelable(cancelable);
 
@@ -61,12 +78,12 @@ public class ProgressDialogHandler extends Handler {
     public void handleMessage(Message msg) {
         switch (msg.what) {
             case SHOW_PROGRESS_DIALOG:
-                initProgressDialog();
+                PDMessage pdMessage = (PDMessage) msg.obj;
+                initProgressDialog(pdMessage);
                 break;
             case DISMISS_PROGRESS_DIALOG:
                 dismissProgressDialog();
                 break;
         }
     }
-
 }

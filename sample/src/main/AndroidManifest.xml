@@ -126,32 +126,32 @@
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
         <activity
-            android:name=".activity.rxjava.index.SampleRxJavaActivity"
+            android:name=".activity.rxjavamvp.index.SampleRxJavaActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.index.ShareIndexActivity" />
         </activity>
         <activity
-            android:name=".activity.rxjava.hellorx.HelloRxJavaActivity"
+            android:name=".activity.rxjavamvp.hellorx.HelloRxJavaActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.rxjava.index.SampleRxJavaActivity" />
+                android:value=".activity.rxjavamvp.index.SampleRxJavaActivity" />
         </activity>
         <activity
-            android:name=".activity.rxjava.flatmap.FlatMapActivity"
+            android:name=".activity.rxjavamvp.flatmap.FlatMapActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.rxjava.index.SampleRxJavaActivity" />
+                android:value=".activity.rxjavamvp.index.SampleRxJavaActivity" />
         </activity>
         <activity
-            android:name=".activity.rxjava.retrofit.activity.RetrofitActivity"
+            android:name=".activity.rxjavamvp.retrofit.view.impl.DBTopMovieActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.rxjava.index.SampleRxJavaActivity" />
+                android:value=".activity.rxjavamvp.index.SampleRxJavaActivity" />
         </activity>
     </application>
 
