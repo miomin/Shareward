@@ -1,5 +1,6 @@
 ## Shareward by miomin
-Android快速开发框架
+
+基于RxJava+Mvp+Retrofit的Android快速开发框架
 
 -------------------
 
