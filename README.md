@@ -10,7 +10,7 @@
 
 ### 2、APP被系统强杀后的正确启动方式、前后台状态监听
 
-### 3、封装Toolbar
+### 3、封装ToolbarActivity
 
 ### 4、RecyclerView通用Adapter、ViewHolder
 
