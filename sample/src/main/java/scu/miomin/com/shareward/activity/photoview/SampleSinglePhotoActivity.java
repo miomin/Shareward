@@ -10,13 +10,13 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder;
 import com.facebook.drawee.controller.BaseControllerListener;
 import com.facebook.imagepipeline.image.ImageInfo;
-import com.scu.miomin.sharewardlib.constants.ActivityType;
-import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
 
 import me.relex.photodraweeview.OnPhotoTapListener;
 import me.relex.photodraweeview.OnViewTapListener;
 import me.relex.photodraweeview.PhotoDraweeView;
 import scu.miomin.com.shareward.R;
+import scu.miomin.com.shareward.constants.ActivityType;
+import scu.miomin.com.shareward.toolbar.ToolbarActivity;
 
 /**
  * Created by 莫绪旻 on 16/7/15.
