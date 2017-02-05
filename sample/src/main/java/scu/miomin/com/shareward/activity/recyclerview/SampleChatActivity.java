@@ -7,13 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.scu.miomin.sharewardlib.constants.ActivityType;
-import com.scu.miomin.sharewardlib.toolbar.ToolbarActivity;
-import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareOnItemClickListener;
-
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.activity.recyclerview.adapter.ChatAdapter;
 import scu.miomin.com.shareward.activity.recyclerview.bean.ChatMessage;
+import scu.miomin.com.shareward.constants.ActivityType;
+import scu.miomin.com.shareward.toolbar.ToolbarActivity;
+import scu.miomin.com.shareward.widgets.recyclerview.ShareOnItemClickListener;
 
 /**
  * Created by 莫绪旻 on 16/6/24.
