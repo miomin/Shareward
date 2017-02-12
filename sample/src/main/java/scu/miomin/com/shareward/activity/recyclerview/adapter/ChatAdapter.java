@@ -2,14 +2,13 @@ package scu.miomin.com.shareward.activity.recyclerview.adapter;
 
 import android.content.Context;
 
-import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareMultiItemCommonAdapter;
-import com.scu.miomin.sharewardlib.widgets.recyclerview.ShareMultiItemTypeSupport;
-import com.scu.miomin.sharewardlib.widgets.recyclerview.holder.ShareViewHolder;
-
 import java.util.List;
 
 import scu.miomin.com.shareward.R;
 import scu.miomin.com.shareward.activity.recyclerview.bean.ChatMessage;
+import scu.miomin.com.shareward.widgets.recyclerview.ShareMultiItemCommonAdapter;
+import scu.miomin.com.shareward.widgets.recyclerview.ShareMultiItemTypeSupport;
+import scu.miomin.com.shareward.widgets.recyclerview.holder.ShareViewHolder;
 
 
 /**
