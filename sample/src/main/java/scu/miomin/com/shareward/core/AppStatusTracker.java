@@ -17,14 +17,36 @@ import scu.miomin.com.shareward.constants.APPStatu;
  */
 public class AppStatusTracker implements Application.ActivityLifecycleCallbacks {
 
+    /**
+     * tracker实例
+     */
     private static AppStatusTracker tracker;
-    private int mAppStatus = APPStatu.STATUS_FORCE_KILLED;
-    private boolean isForground; // 应用是否处于前台状态
-    private List<Activity> activities = new ArrayList<Activity>();// 用来管理所有的Activity
-    private int aliveActivityCount = 0; //记录处于前台状态的activity数量
-    private long deathtime; // 应用进入后台的时间
-    private AppController appController;
 
+    /**
+     * APP的启动模式状态
+     */
+    private int mAppStatus = APPStatu.STATUS_FORCE_KILLED;
+
+    /**
+     * 判断APP是否在前台
+     */
+    private boolean isForground;
+
+    /**
+     * 用于管理所有的Activity
+     */
+    private List<Activity> activities = new ArrayList<Activity>();
+
+    /**
+     * 记录处于前台状态的activity数量
+     */
+    private int aliveActivityCount = 0;
+
+    /**
+     * 应用进入后台的时间
+     */
+    private long deathtime;
+    private AppController appController;
 
     private Application application;
 
@@ -33,6 +55,11 @@ public class AppStatusTracker implements Application.ActivityLifecycleCallbacks 
         application.registerActivityLifecycleCallbacks(this);
     }
 
+    /**
+     * 通过单例模式获取AppStatusTracker
+     * @param application
+     * @return
+     */
     public static AppStatusTracker getInstance(Application application) {
         if (tracker == null) {
             tracker = new AppStatusTracker(application);
