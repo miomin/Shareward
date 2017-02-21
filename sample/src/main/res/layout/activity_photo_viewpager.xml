@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.scu.miomin.sharewardlib.view.MultiTouchViewPager
+    <scu.miomin.com.shareward.view.MultiTouchViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
