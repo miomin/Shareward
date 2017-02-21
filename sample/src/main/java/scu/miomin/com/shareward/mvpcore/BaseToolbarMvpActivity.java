@@ -21,6 +21,9 @@ import scu.miomin.com.shareward.util.progress.ProgressCancelListener;
  */
 public abstract class BaseToolbarMvpActivity<P extends BasePresenter> extends BaseActivity implements IBaseView {
 
+    /**
+     * Activity需要持有Presenter对象用于交互
+     */
     protected P mvpPresenter;
 
     protected Toolbar toolbar;
@@ -28,9 +31,16 @@ public abstract class BaseToolbarMvpActivity<P extends BasePresenter> extends Ba
     protected ActionBar actionBar;
     private ToolBarHelper mToolBarHelper;
 
+    /**
+     * 初始化UI
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /**
+         * 初始化presenter
+         */
         mvpPresenter = createPresenter();
         mProgressDialogHandler.setProgressCancleListener(new ProgressCancelListener() {
             @Override
@@ -40,8 +50,15 @@ public abstract class BaseToolbarMvpActivity<P extends BasePresenter> extends Ba
         });
     }
 
+    /**
+     * 用于给子类实现的创建Presenter对象的抽象方法
+     * @return
+     */
     protected abstract P createPresenter();
 
+    /**
+     * 需要在Activity被销毁时，结束presenter的生命周期
+     */
     @Override
     protected void onDestroy() {
         super.onDestroy();
