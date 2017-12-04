@@ -30,6 +30,7 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
     private RecyclerView mRecyclerView;
     private SHSwipeRefreshLayout swipeRefreshLayout;
     private List<String> mDatas = new ArrayList<>();
+    private TextView tv;
 
     @Override
     protected void getContentView() {
@@ -42,6 +43,13 @@ public class SampleRecyclerViewActivity extends ToolbarActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addItemDecoration(new ShareDividerItemDecoration(this, ShareDividerItemDecoration.VERTICAL_LIST));
+        tv = (TextView) findViewById(R.id.tv);
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SampleRecyclerViewActivity.this,"click",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override

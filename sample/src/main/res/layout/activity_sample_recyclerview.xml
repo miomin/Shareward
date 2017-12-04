@@ -13,10 +13,24 @@
         app:progress_bar_color="@color/colorPrimary"
         app:refresh_text="下拉刷新">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/id_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_marginTop="26dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"/>
+
+
 
     </com.scu.miomin.shswiperefresh.core.SHSwipeRefreshLayout>
 
